@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Net", ".Net", "{87F0DFE0-E9E8-4A97-8D80-82AE8F99585A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{3F621A53-5126-4098-859F-CD26D3258689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neomaster.Extensions.Exception", ".Net\NuGet\Neomaster.Extensions.Exception\Neomaster.Extensions.Exception.csproj", "{3B20676E-B1DF-4475-994B-0E1C0DEAEA87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B20676E-B1DF-4475-994B-0E1C0DEAEA87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B20676E-B1DF-4475-994B-0E1C0DEAEA87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B20676E-B1DF-4475-994B-0E1C0DEAEA87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B20676E-B1DF-4475-994B-0E1C0DEAEA87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F621A53-5126-4098-859F-CD26D3258689} = {87F0DFE0-E9E8-4A97-8D80-82AE8F99585A}
+		{3B20676E-B1DF-4475-994B-0E1C0DEAEA87} = {3F621A53-5126-4098-859F-CD26D3258689}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
+	EndGlobalSection
+EndGlobal
