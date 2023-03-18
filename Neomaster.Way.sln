@@ -9,6 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{3F621A53
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neomaster.Extensions.Exception", ".Net\NuGet\Neomaster.Extensions.Exception\Neomaster.Extensions.Exception.csproj", "{3B20676E-B1DF-4475-994B-0E1C0DEAEA87}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{69EB6987-1C49-4B7B-9C18-353B1CF6A46C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StyleCop", "StyleCop", "{70C50A18-5940-4354-BE52-404D66F3C826}"
+	ProjectSection(SolutionItems) = preProject
+		.Net\Tools\StyleCop\StyleCop.json = .Net\Tools\StyleCop\StyleCop.json
+		.Net\Tools\StyleCop\StyleCop.props = .Net\Tools\StyleCop\StyleCop.props
+		.Net\Tools\StyleCop\StyleCop.ruleset = .Net\Tools\StyleCop\StyleCop.ruleset
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +35,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3F621A53-5126-4098-859F-CD26D3258689} = {87F0DFE0-E9E8-4A97-8D80-82AE8F99585A}
 		{3B20676E-B1DF-4475-994B-0E1C0DEAEA87} = {3F621A53-5126-4098-859F-CD26D3258689}
+		{69EB6987-1C49-4B7B-9C18-353B1CF6A46C} = {87F0DFE0-E9E8-4A97-8D80-82AE8F99585A}
+		{70C50A18-5940-4354-BE52-404D66F3C826} = {69EB6987-1C49-4B7B-9C18-353B1CF6A46C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
