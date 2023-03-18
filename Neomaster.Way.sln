@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{AE855DCB-5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{58534930-A082-42EC-9C3B-A0C8060C8E4B}"
 	ProjectSection(SolutionItems) = preProject
+		Docs\logo.png = Docs\logo.png
 		Docs\Shortcuts.md = Docs\Shortcuts.md
 	EndProjectSection
 EndProject
