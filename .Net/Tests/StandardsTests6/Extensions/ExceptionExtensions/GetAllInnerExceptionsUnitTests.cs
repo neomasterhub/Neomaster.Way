@@ -297,4 +297,82 @@ public class GetAllInnerExceptionsUnitTests
         Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
     }
     #endregion
+
+    #region Should return all exceptions
+    [Fact(DisplayName = "ae[e] -> [ae,e]")]
+    public void ShouldReturnAllExceptions_1()
+    {
+        var e = new Exception();
+        var ae = new AggregateException(e);
+        var expected = new Exception[]
+        {
+            ae,
+            e,
+        };
+
+        var actual = ae.GetAllInnerExceptions(addAggregate: true);
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+
+    [Fact(DisplayName = "e[ae] -> [e,ae]")]
+    public void ShouldReturnAllExceptions_2()
+    {
+        var ae = new AggregateException();
+        var e = new Exception(null, ae);
+        var expected = new Exception[]
+        {
+            e,
+            ae,
+        };
+
+        var actual = e.GetAllInnerExceptions(addAggregate: true);
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+
+    [Fact(DisplayName = "ae1[ae2[ae3]] -> [ae1,ae2,ae3]")]
+    public void ShouldReturnAllExceptions_3()
+    {
+        var ae3 = new AggregateException();
+        var ae2 = new AggregateException(ae3);
+        var ae1 = new AggregateException(ae2);
+        var expected = new Exception[]
+        {
+            ae1,
+            ae2,
+            ae3,
+        };
+
+        var actual = ae1.GetAllInnerExceptions(addAggregate: true);
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+
+    [Fact(DisplayName = "ae1[ae2[ae3]] -> [e1,e2,e3]")]
+    public void ShouldReturnAllExceptions_4()
+    {
+        var ae3 = new AggregateException();
+        var ae2 = new AggregateException(ae3);
+        var ae1 = new AggregateException(ae2);
+        var expectedMessages = new string[]
+        {
+            ae1.Message,
+            ae2.Message,
+            ae3.Message,
+        };
+
+        var actual = ae1.GetAllInnerExceptions(addAggregate: true, aggregateToSingle: true);
+
+        Assert.Equal(expectedMessages.Length, actual.Count);
+        Assert.All(actual, (e) => Assert.Equal(nameof(Exception), e.GetType().Name));
+        Assert.Equal(expectedMessages, actual.Select(e => e.Message));
+    }
+    #endregion
 }
