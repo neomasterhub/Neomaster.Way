@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Net", ".Net", "{87F0DFE0-E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{3F621A53-5126-4098-859F-CD26D3258689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neomaster.Extensions.Exception", ".Net\NuGet\Neomaster.Extensions.Exception\Neomaster.Extensions.Exception.csproj", "{3B20676E-B1DF-4475-994B-0E1C0DEAEA87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neomaster.Extensions.Exception", ".Net\NuGet\Neomaster.Extensions.Exception\Neomaster.Extensions.Exception.csproj", "{3B20676E-B1DF-4475-994B-0E1C0DEAEA87}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{69EB6987-1C49-4B7B-9C18-353B1CF6A46C}"
 EndProject
@@ -18,13 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StyleCop", "StyleCop", "{70
 		.Net\Tools\StyleCop\StyleCop.ruleset = .Net\Tools\StyleCop\StyleCop.ruleset
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{AE855DCB-5C9F-4508-9EEA-7F4744E730D4}"
-	ProjectSection(SolutionItems) = preProject
-		.Net\Docs\Connections.md = .Net\Docs\Connections.md
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{58534930-A082-42EC-9C3B-A0C8060C8E4B}"
 	ProjectSection(SolutionItems) = preProject
+		Docs\Connections.md = Docs\Connections.md
 		Docs\logo.png = Docs\logo.png
 		Docs\Shortcuts.md = Docs\Shortcuts.md
 	EndProjectSection
@@ -48,7 +44,6 @@ Global
 		{3B20676E-B1DF-4475-994B-0E1C0DEAEA87} = {3F621A53-5126-4098-859F-CD26D3258689}
 		{69EB6987-1C49-4B7B-9C18-353B1CF6A46C} = {87F0DFE0-E9E8-4A97-8D80-82AE8F99585A}
 		{70C50A18-5940-4354-BE52-404D66F3C826} = {69EB6987-1C49-4B7B-9C18-353B1CF6A46C}
-		{AE855DCB-5C9F-4508-9EEA-7F4744E730D4} = {87F0DFE0-E9E8-4A97-8D80-82AE8F99585A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
