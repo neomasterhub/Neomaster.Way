@@ -5,7 +5,9 @@
 1. [Creation. Start, Parallel writing][threads-1]
 2. [Background][threads-2]
 3. [Foreground][threads-3]
+4. [Thread info: id, name, culture, is background][threads-4]
 
 [threads-1]:.Net/Research/Threads/CreatingStartParallelWritingUnitDemo.cs
 [threads-2]:.Net/Research/Threads.Background/Program.cs
 [threads-3]:.Net/Research/Threads.Foreground/Program.cs
+[threads-4]:.Net/Research/Threads/InfoUnitDemo.cs
