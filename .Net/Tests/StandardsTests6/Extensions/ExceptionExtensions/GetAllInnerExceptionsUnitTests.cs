@@ -156,4 +156,145 @@ public class GetAllInnerExceptionsUnitTests
         Assert.Equal(nameof(Exception), actual.Single().GetType().Name);
     }
     #endregion
+
+    #region Should return only non-aggregate exceptions
+    [Fact(DisplayName = "ae[e1,e2] -> [e1,e2]")]
+    public void ShouldReturnOnlyNonAggregateExceptions_1()
+    {
+        var expected = new Exception[]
+        {
+            new Exception("1"),
+            new Exception("2"),
+        };
+        var tree = new AggregateException(expected);
+
+        var actual = tree.GetAllInnerExceptions();
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+
+    [Fact(DisplayName = "e1[ae[e2]] -> [e1,e2]")]
+    public void ShouldReturnOnlyNonAggregateExceptions_2()
+    {
+        var e2 = new Exception("2");
+        var ae = new AggregateException(e2);
+        var e1 = new Exception("1", ae);
+        var expected = new Exception[]
+        {
+            e1,
+            e2,
+        };
+
+        var actual = e1.GetAllInnerExceptions();
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+
+    [Fact(DisplayName = "ae1[e1,ae2[e2]] -> [e1,e2]")]
+    public void ShouldReturnOnlyNonAggregateExceptions_3()
+    {
+        var e1 = new Exception("1");
+        var e2 = new Exception("2");
+        var expected = new Exception[]
+        {
+            e1,
+            e2,
+        };
+        var tree =
+            new AggregateException(
+                e1,
+                new AggregateException(
+                    e2));
+
+        var actual = tree.GetAllInnerExceptions();
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+
+    [Fact(DisplayName = "ae1[e1,ae2,e2] -> [e1,e2]")]
+    public void ShouldReturnOnlyNonAggregateExceptions_4()
+    {
+        var e1 = new Exception("1");
+        var e2 = new Exception("2");
+        var expected = new Exception[]
+        {
+            e1,
+            e2,
+        };
+        var tree =
+            new AggregateException(
+                e1,
+                new AggregateException(),
+                e2);
+
+        var actual = tree.GetAllInnerExceptions();
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+
+    [Fact(DisplayName = "ae1[ae2[e1,e2],ae3[e3,e4]] -> [e1,e2,e3,e4]")]
+    public void ShouldReturnOnlyNonAggregateExceptions_5()
+    {
+        var e1 = new Exception("1");
+        var e2 = new Exception("2");
+        var e3 = new Exception("3");
+        var e4 = new Exception("4");
+        var expected = new Exception[]
+        {
+            e1,
+            e2,
+            e3,
+            e4,
+        };
+        var tree =
+            new AggregateException(
+                new AggregateException(
+                    e1,
+                    e2),
+                new AggregateException(
+                    e3,
+                    e4));
+
+        var actual = tree.GetAllInnerExceptions();
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+
+    [Fact(DisplayName = "ae1[e1[e2],ae2[e3[e4]]] -> [e1,e2,e3,e4]")]
+    public void ShouldReturnOnlyNonAggregateExceptions_6()
+    {
+        var e4 = new Exception("4");
+        var e3 = new Exception("3", e4);
+        var e2 = new Exception("2");
+        var e1 = new Exception("1", e2);
+        var expected = new Exception[]
+        {
+            e1,
+            e2,
+            e3,
+            e4,
+        };
+        var tree =
+            new AggregateException(
+                e1,
+                new AggregateException(
+                    e3));
+
+        var actual = tree.GetAllInnerExceptions();
+
+        Assert.Equal(expected.Length, actual.Count);
+        Assert.Equal(expected, actual);
+        Assert.Equal(expected.Select(e => e.Message), actual.Select(e => e.Message));
+    }
+    #endregion
 }
