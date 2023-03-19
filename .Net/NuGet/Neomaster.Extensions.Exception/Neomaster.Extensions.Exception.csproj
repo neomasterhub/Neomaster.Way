@@ -3,8 +3,35 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>disable</Nullable>
+		<Version>1.0.2</Version>
+		<Authors>Neomaster</Authors>
+		<Copyright>© Neomaster, 2023</Copyright>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/neomasterhub/Neomaster.Way/tree/master/.Net/NuGet/Neomaster.Extensions.Exception</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/neomasterhub/Neomaster.Way/tree/master/.Net/NuGet/Neomaster.Extensions.Exception</RepositoryUrl>
+		<Description>Retrieves all internal exceptions of the exception tree, including AggregateException.</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
-	<Import Project="$(SolutionDir).Net\Tools\StyleCop\StyleCop.props"/>
+	<ItemGroup>
+		<None Include="$(SolutionDir)LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="$(SolutionDir)\Docs\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<Import Project="$(SolutionDir).Net\Tools\StyleCop\StyleCop.props" />
 
 </Project>
