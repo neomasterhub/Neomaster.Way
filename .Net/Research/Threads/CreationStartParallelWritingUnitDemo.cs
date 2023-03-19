@@ -4,11 +4,11 @@ using Xunit.Abstractions;
 
 namespace Threads;
 
-public class CreatingStartParallelWritingUnitDemo : UnitDemoBase
+public class CreationStartParallelWritingUnitDemo : UnitDemoBase
 {
     private static string _threadsOutput = string.Empty;
 
-    public CreatingStartParallelWritingUnitDemo(ITestOutputHelper output)
+    public CreationStartParallelWritingUnitDemo(ITestOutputHelper output)
         : base(output)
     {
     }
@@ -31,7 +31,7 @@ public class CreatingStartParallelWritingUnitDemo : UnitDemoBase
         }
     }
 
-    [Fact(DisplayName = "Creating, start, parallel writing")]
+    [Fact(DisplayName = "Creation, start, parallel writing")]
     public void Demo()
     {
         var th1 = new Thread(WriteStar);
