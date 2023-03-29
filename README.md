@@ -14,7 +14,7 @@
 10. [`ThreadPriority`][threads-10]
 11. [Affinity parameterized][threads-11]
 12. [Affinity programmed][threads-12]
-13. `Suspend()` & `Resume()`:
+13. `Suspend()`, `Resume()`:
     - [Sequential cycles][threads-13.1]
     - [Tick tock][threads-13.2]
 
