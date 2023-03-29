@@ -12,7 +12,8 @@
 8. [`Abort()`][threads-8]
 9. [`Abort(stateInfo)`, `ThreadAbortException`][threads-9]
 10. [`ThreadPriority`][threads-10]
-11. [Affinity: parameterized][threads-11]
+11. [Affinity parameterized][threads-11]
+11. [Affinity programmed][threads-12]
 
 [threads-1]:.Net/Research/Threads/CreationStartParallelWritingUnitDemo.cs
 [threads-2]:.Net/Research/Threads.Background/Program.cs
@@ -25,3 +26,4 @@
 [threads-9]:.Net/Research/Threads.AbortArg/Program.cs
 [threads-10]:.Net/Research/Threads.Priority/Program.cs
 [threads-11]:.Net/Research/Threads.AffinityParameterized
+[threads-12]:.Net/Research/Threads.AffinityProgrammed/Program.cs
