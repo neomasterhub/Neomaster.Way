@@ -47,6 +47,9 @@ public class CreationStartParallelWritingUnitDemo : UnitDemoBase
             Thread.Sleep(20);
         }
 
-        Output.WriteLine(_threadsOutput); // *.@...*...*....*...*..@.*...*...*...*...*.@..*....*...*...*...@*
+        Output.WriteLine(_threadsOutput);
+
+        // Output:
+        // *.@...*...*....*...*..@.*...*...*...*...*.@..*....*...*...*...@*
     }
 }
