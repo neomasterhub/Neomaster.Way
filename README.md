@@ -10,6 +10,7 @@
 6. [`Join()`, Sequential writing by joined threads][threads-6]
 7. [`Join(timeout)`, Joining a thread after timeout.][threads-7]
 8. [`Abort()`][threads-8]
+9. [`Abort(stateInfo)`, `ThreadAbortException`][threads-9]
 
 [threads-1]:.Net/Research/Threads/CreationStartParallelWritingUnitDemo.cs
 [threads-2]:.Net/Research/Threads.Background/Program.cs
@@ -19,3 +20,4 @@
 [threads-6]:.Net/Research/Threads/JoinUnitDemo.cs
 [threads-7]:.Net/Research/Threads/JoinTimeoutUnitDemo.cs
 [threads-8]:.Net/Research/Threads.Abort/Program.cs
+[threads-9]:.Net/Research/Threads.AbortArg/Program.cs
