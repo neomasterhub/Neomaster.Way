@@ -8,7 +8,7 @@
 4. [Thread info: id, name, culture, is background][threads-4]
 5. [`IsAlive` in different thread life states][threads-5]
 6. [`Join()`, Sequential writing by joined threads][threads-6]
-7. [`Join(timeout)`][threads-7]
+7. [`Join(timeout)`, Joining a thread after timeout.][threads-7]
 
 [threads-1]:.Net/Research/Threads/CreationStartParallelWritingUnitDemo.cs
 [threads-2]:.Net/Research/Threads.Background/Program.cs
