@@ -15,8 +15,8 @@
 11. [Affinity parameterized][threads-11]
 12. [Affinity programmed][threads-12]
 13. `Suspend()` & `Resume()`:
-    [Sequential cycles][threads-13.1],
-    [Tick tock][threads-13.2]
+    - [Sequential cycles][threads-13.1]
+    - [Tick tock][threads-13.2]
 
 [threads-1]:.Net/Research/Threads/CreationStartParallelWritingUnitDemo.cs
 [threads-2]:.Net/Research/Threads.Background/Program.cs
