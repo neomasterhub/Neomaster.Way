@@ -41,9 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads", ".Net\Research\Th
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestEngine6", ".Net\Tests\TestEngine6\TestEngine6.csproj", "{CE3E1803-D1B6-4539-BDEE-87393BF20685}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.Foreground", ".Net\Research\Threads.Foreground\Threads.Foreground.csproj", "{E81F4D12-E0EB-4F1D-834F-7C2FCBA284D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.Foreground", ".Net\Research\Threads.Foreground\Threads.Foreground.csproj", "{E81F4D12-E0EB-4F1D-834F-7C2FCBA284D8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.Background", ".Net\Research\Threads.Background\Threads.Background.csproj", "{C1A43ADB-F9BB-4AED-98CB-99EA370ADF41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.Abort", ".Net\Research\Threads.Abort\Threads.Abort.csproj", "{334486BF-859C-4FA5-8661-8901B7A041CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{C1A43ADB-F9BB-4AED-98CB-99EA370ADF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1A43ADB-F9BB-4AED-98CB-99EA370ADF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1A43ADB-F9BB-4AED-98CB-99EA370ADF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334486BF-859C-4FA5-8661-8901B7A041CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334486BF-859C-4FA5-8661-8901B7A041CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334486BF-859C-4FA5-8661-8901B7A041CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334486BF-859C-4FA5-8661-8901B7A041CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +97,7 @@ Global
 		{CE3E1803-D1B6-4539-BDEE-87393BF20685} = {B14FE8EE-FD13-4712-ADBB-478FD058CE48}
 		{E81F4D12-E0EB-4F1D-834F-7C2FCBA284D8} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{C1A43ADB-F9BB-4AED-98CB-99EA370ADF41} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
+		{334486BF-859C-4FA5-8661-8901B7A041CE} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
