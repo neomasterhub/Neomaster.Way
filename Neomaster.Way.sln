@@ -51,7 +51,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.AbortArg", ".Net\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.Priority", ".Net\Research\Threads.Priority\Threads.Priority.csproj", "{90AECA6B-7505-4974-80F1-9C86F504825B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.AffinityParametrized", ".Net\Research\Threads.AffinityParametrized\Threads.AffinityParametrized.csproj", "{AAD1E2CD-156A-4DE7-A965-D7D35B28CF39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.AffinityParameterized", ".Net\Research\Threads.AffinityParameterized\Threads.AffinityParameterized.csproj", "{AAD1E2CD-156A-4DE7-A965-D7D35B28CF39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

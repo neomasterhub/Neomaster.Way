@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading;
 
-namespace Threads.AffinityParametrized
+namespace Threads.AffinityParameterized
 {
     internal class Program
     {
