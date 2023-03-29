@@ -6,7 +6,7 @@ namespace Threads.SuspendResume.TickTock
 {
     internal class Program
     {
-        private static void Beep(int frequency, Func<Thread> next)
+        private static void Beep(int frequency, Thread next)
         {
             Thread.CurrentThread.Suspend();
 
@@ -14,7 +14,7 @@ namespace Threads.SuspendResume.TickTock
             {
                 Console.Beep(frequency, 500);
                 Thread.Sleep(1000);
-                next.Invoke().Resume();
+                next.Resume();
                 Thread.CurrentThread.Suspend();
             }
         }
@@ -24,8 +24,8 @@ namespace Threads.SuspendResume.TickTock
             Thread tick = null;
             Thread tock = null;
 
-            tick = new Thread(() => Beep(500, () => tock));
-            tock = new Thread(() => Beep(1000, () => tick));
+            tick = new Thread(() => Beep(500, tock));
+            tock = new Thread(() => Beep(1000, tick));
 
             tick.Start();
             tock.Start();
