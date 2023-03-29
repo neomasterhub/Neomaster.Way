@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.SuspendResume", ".N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.SuspendResume.TickTock", ".Net\Research\Threads.SuspendResume.TickTock\Threads.SuspendResume.TickTock.csproj", "{30946C40-EB30-4354-8DCA-933573709D77}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.Sync", ".Net\Research\Threads.Sync\Threads.Sync.csproj", "{DF50310D-D766-46B6-A847-CDAF02ABF61A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{30946C40-EB30-4354-8DCA-933573709D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30946C40-EB30-4354-8DCA-933573709D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30946C40-EB30-4354-8DCA-933573709D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF50310D-D766-46B6-A847-CDAF02ABF61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF50310D-D766-46B6-A847-CDAF02ABF61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF50310D-D766-46B6-A847-CDAF02ABF61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF50310D-D766-46B6-A847-CDAF02ABF61A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +146,7 @@ Global
 		{EBA78027-8AAE-454E-836E-8867AA2E878D} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{44C041F7-C775-4A17-BD70-5225AB542E0E} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{30946C40-EB30-4354-8DCA-933573709D77} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
+		{DF50310D-D766-46B6-A847-CDAF02ABF61A} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
