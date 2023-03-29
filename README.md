@@ -2,7 +2,7 @@
 
 ## Research
 ### Threads
-1. [Creation. Start, Parallel writing][threads-1]
+1. [Creation, Start, Parallel writing][threads-1]
 2. [Background][threads-2]
 3. [Foreground][threads-3]
 4. [Thread info: id, name, culture, is background][threads-4]
