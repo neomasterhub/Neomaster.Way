@@ -28,7 +28,7 @@ public class IsAliveUnitDemo : UnitDemoBase
         Output.WriteLine($"Executed: {th.IsAlive}");
 
         // Output:
-        // Before start: False
+        // Not started: False
         // Executing: True
         // Executed: False
     }
