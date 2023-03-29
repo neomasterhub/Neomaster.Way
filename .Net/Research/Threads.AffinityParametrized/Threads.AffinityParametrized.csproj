@@ -49,6 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="run_af_0001.bat" />
+    <None Include="run_af_0011.bat" />
+    <None Include="run_af_0110.bat" />
+    <None Include="run_af_1111.bat" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,6 +31,24 @@ namespace Threads.AffinityParametrized
             // lowest
             threads.Last().Join();
             Console.ReadKey();
+
+            // Output:
+            //
+            // [run_af_0001.bat]
+            //
+            // Thread     Highest, i = 1000000000
+            // Thread AboveNormal, i = 0
+            // Thread      Normal, i = 0
+            // Thread BelowNormal, i = 0
+            // Thread      Lowest, i = 0
+            //
+            // [run_af_1111.bat]
+            // 
+            // Thread      Highest, i=988866452
+            // Thread       Normal, i=1000000000
+            // Thread  AboveNormal, i=996749408
+            // Thread  BelowNormal, i=3569215
+            // Thread       Lowest, i=0
         }
     }
 }
