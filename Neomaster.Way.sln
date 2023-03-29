@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.Abort", ".Net\Resea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.AbortArg", ".Net\Research\Threads.AbortArg\Threads.AbortArg.csproj", "{60B208BD-BA25-45A0-A66E-0AB55E6F0643}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.Priority", ".Net\Research\Threads.Priority\Threads.Priority.csproj", "{90AECA6B-7505-4974-80F1-9C86F504825B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{60B208BD-BA25-45A0-A66E-0AB55E6F0643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60B208BD-BA25-45A0-A66E-0AB55E6F0643}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60B208BD-BA25-45A0-A66E-0AB55E6F0643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90AECA6B-7505-4974-80F1-9C86F504825B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90AECA6B-7505-4974-80F1-9C86F504825B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90AECA6B-7505-4974-80F1-9C86F504825B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90AECA6B-7505-4974-80F1-9C86F504825B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +111,7 @@ Global
 		{C1A43ADB-F9BB-4AED-98CB-99EA370ADF41} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{334486BF-859C-4FA5-8661-8901B7A041CE} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{60B208BD-BA25-45A0-A66E-0AB55E6F0643} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
+		{90AECA6B-7505-4974-80F1-9C86F504825B} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
