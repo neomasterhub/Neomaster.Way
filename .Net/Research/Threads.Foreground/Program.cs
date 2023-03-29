@@ -8,10 +8,11 @@
     }
 });
 
-Console.WriteLine($"is background: {foreground.IsBackground}"); // is background: False
+Console.WriteLine($"F is background: {foreground.IsBackground}");
+Console.Write('M');
 
 foreground.Start();
 
-Console.Write('M');
-
-// Output: MFFFFF
+// Output:
+// F is background: False
+// MFFFFF
