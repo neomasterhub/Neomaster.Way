@@ -12,7 +12,8 @@
 };
 
 background.Start();
-
+Thread.Sleep(500);
 Console.Write('M');
 
-// Output: MB
+// Output:
+// BM
