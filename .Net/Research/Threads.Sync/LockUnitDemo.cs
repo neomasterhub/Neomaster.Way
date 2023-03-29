@@ -1,0 +1,60 @@
+﻿using System.Text;
+using TestEngine6;
+using Xunit;
+using Xunit.Abstractions;
+
+namespace Threads.Sync;
+
+public class LockUnitDemo : UnitDemoBase
+{
+    private static readonly object _locked = new();
+    private static readonly StringBuilder _resource = new();
+
+    public LockUnitDemo(ITestOutputHelper output)
+        : base(output)
+    {
+    }
+
+    private static void Write(char c)
+    {
+        lock (_locked)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                _resource.Append(c);
+                Thread.Sleep(10);
+            }
+
+            _resource.Append('\n');
+        }
+    }
+
+    [Fact(DisplayName = "Sequential writing to a single resource")]
+    public void Demo()
+    {
+        List<Thread> threads = new();
+
+        for (var i = 'A'; i < 'F'; i++)
+        {
+            char c = i;
+            threads.Add(new Thread(() => Write(c)));
+        }
+
+        threads.ForEach(th =>
+        {
+            th.Start();
+            Thread.Sleep(10);
+        });
+
+        threads.ForEach(th => th.Join());
+
+        Output.WriteLine(_resource.ToString());
+
+        // Output:
+        // AAAAAAAAAA
+        // BBBBBBBBBB
+        // CCCCCCCCCC
+        // DDDDDDDDDD
+        // EEEEEEEEEE
+    }
+}
