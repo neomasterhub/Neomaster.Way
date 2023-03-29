@@ -33,6 +33,9 @@ public class JoinUnitDemo : UnitDemoBase
         th2.Start();
         th2.Join();
 
-        Output.WriteLine(output); // *****.....
+        Output.WriteLine(output);
+
+        // Output:
+        // *****.....
     }
 }
