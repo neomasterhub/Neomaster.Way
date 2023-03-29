@@ -8,6 +8,8 @@ namespace Threads.SuspendResume
     {
         private static int _i = 0;
         private static readonly int _max = 3;
+        private static readonly Thread _th1 = new Thread(() => Write('-', _th2));
+        private static readonly Thread _th2 = new Thread(() => Write('|', _th1));
 
         private static void Write(char symbol, Thread next)
         {
@@ -29,18 +31,12 @@ namespace Threads.SuspendResume
 
         static void Main()
         {
-            Thread th1 = null;
-            Thread th2 = null;
+            _th1.Start();
+            _th2.Start();
 
-            th1 = new Thread(() => Write('-', th2));
-            th2 = new Thread(() => Write('|', th1));
+            while (_th1.ThreadState != ThreadState.Suspended) ;
 
-            th1.Start();
-            th2.Start();
-
-            while (th1.ThreadState != ThreadState.Suspended) ;
-
-            th1.Resume();
+            _th1.Resume();
 
             // Output:
             // ---|||---|||---|||
