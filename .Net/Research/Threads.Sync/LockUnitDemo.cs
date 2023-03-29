@@ -22,7 +22,7 @@ public class LockUnitDemo : UnitDemoBase
             for (int i = 0; i < 10; i++)
             {
                 _resource.Append(c);
-                Thread.Sleep(10);
+                Thread.Sleep(10); // To be executing when others start.
             }
 
             _resource.Append('\n');
@@ -43,7 +43,7 @@ public class LockUnitDemo : UnitDemoBase
         threads.ForEach(th =>
         {
             th.Start();
-            Thread.Sleep(10);
+            Thread.Sleep(10); // For order.
         });
 
         threads.ForEach(th => th.Join());
