@@ -9,7 +9,7 @@ namespace Threads.SuspendResume
         private static int _i = 0;
         private static readonly int _max = 3;
 
-        private static void Write(char symbol, Func<Thread> next)
+        private static void Write(char symbol, Thread next)
         {
             Thread.CurrentThread.Suspend();
 
@@ -21,7 +21,7 @@ namespace Threads.SuspendResume
                 if (++_i == _max)
                 {
                     _i = 0;
-                    next.Invoke().Resume();
+                    next.Resume();
                     Thread.CurrentThread.Suspend();
                 }
             }
@@ -32,8 +32,8 @@ namespace Threads.SuspendResume
             Thread th1 = null;
             Thread th2 = null;
 
-            th1 = new Thread(() => Write('-', () => th2));
-            th2 = new Thread(() => Write('|', () => th1));
+            th1 = new Thread(() => Write('-', th2));
+            th2 = new Thread(() => Write('|', th1));
 
             th1.Start();
             th2.Start();
