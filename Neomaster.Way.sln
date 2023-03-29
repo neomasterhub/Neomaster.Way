@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.AffinityProgrammed"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.SuspendResume", ".Net\Research\Threads.SuspendResume\Threads.SuspendResume.csproj", "{44C041F7-C775-4A17-BD70-5225AB542E0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.SuspendResume.TickTock", ".Net\Research\Threads.SuspendResume.TickTock\Threads.SuspendResume.TickTock.csproj", "{30946C40-EB30-4354-8DCA-933573709D77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{44C041F7-C775-4A17-BD70-5225AB542E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44C041F7-C775-4A17-BD70-5225AB542E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44C041F7-C775-4A17-BD70-5225AB542E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30946C40-EB30-4354-8DCA-933573709D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30946C40-EB30-4354-8DCA-933573709D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30946C40-EB30-4354-8DCA-933573709D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30946C40-EB30-4354-8DCA-933573709D77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,6 +139,7 @@ Global
 		{AAD1E2CD-156A-4DE7-A965-D7D35B28CF39} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{EBA78027-8AAE-454E-836E-8867AA2E878D} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{44C041F7-C775-4A17-BD70-5225AB542E0E} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
+		{30946C40-EB30-4354-8DCA-933573709D77} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
