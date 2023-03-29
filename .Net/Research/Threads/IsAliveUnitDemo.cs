@@ -16,15 +16,20 @@ public class IsAliveUnitDemo : UnitDemoBase
     {
         var th = new Thread(() => Thread.Sleep(200));
 
-        Output.WriteLine(th.IsAlive.ToString()); // False
+        Output.WriteLine($"Not started: {th.IsAlive}");
 
         th.Start();
         Thread.Sleep(100);
 
-        Output.WriteLine(th.IsAlive.ToString()); // True
+        Output.WriteLine($"Executing: {th.IsAlive}");
 
         Thread.Sleep(300);
 
-        Output.WriteLine(th.IsAlive.ToString()); // False
+        Output.WriteLine($"Executed: {th.IsAlive}");
+
+        // Output:
+        // Before start: False
+        // Executing: True
+        // Executed: False
     }
 }
