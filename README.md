@@ -38,6 +38,8 @@
 1. [`lock`][threads.sync-1]
 2. `Monitor`
     - [`Enter()`, `Exit()`][threads.sync-2.1]
+    - [`IsEntered()`][threads.sync-2.2]
 
 [threads.sync-1]:.Net/Research/Threads.Sync/LockUnitDemo.cs
 [threads.sync-2.1]:.Net/Research/Threads.Sync/MonitorUnitDemo.cs
+[threads.sync-2.2]:.Net/Research/Threads.Sync/Monitors/IsEnteredUnitDemo.cs
