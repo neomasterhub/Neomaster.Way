@@ -15,7 +15,7 @@
 10. [`ThreadPriority`][threads-10]
 11. [Affinity parameterized][threads-11]
 12. [Affinity programmed][threads-12]
-13. `Suspend()`, `Resume()`:
+13. `Suspend()`, `Resume()`
     - [Sequential cycles][threads-13.1]
     - [Tick tock][threads-13.2]
 
@@ -36,5 +36,8 @@
 
 ### Threads Sync
 1. [`lock`][threads.sync-1]
+2. `Monitor`
+    - [`Enter()`, `Exit()`][threads.sync-2.1]
 
 [threads.sync-1]:.Net/Research/Threads.Sync/LockUnitDemo.cs
+[threads.sync-2.1]:.Net/Research/Threads.Sync/MonitorUnitDemo.cs

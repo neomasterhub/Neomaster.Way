@@ -9,8 +9,9 @@
 
 	<Import Project="$(SolutionDir).Net\Tools\StyleCop\StyleCop.props" />
 	<Import Project="$(SolutionDir).Net\Tests\TestEngine6\testing.targets" />
+	
 	<ItemGroup>
-	  <ProjectReference Include="..\..\NuGet\Neomaster.Extensions.Exception\Neomaster.Extensions.Exception.csproj" />
+		<ProjectReference Include="..\..\NuGet\Neomaster.Extensions.Exception\Neomaster.Extensions.Exception.csproj" />
 	</ItemGroup>
 
 </Project>
