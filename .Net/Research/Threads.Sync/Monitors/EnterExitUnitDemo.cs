@@ -3,14 +3,14 @@ using TestEngine6;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace Threads.Sync;
+namespace Threads.Sync.Monitors;
 
-public class MonitorUnitDemo : UnitDemoBase
+public class EnterExitUnitDemo : UnitDemoBase
 {
     private static readonly object _locked = new();
     private static readonly StringBuilder _resource = new();
 
-    public MonitorUnitDemo(ITestOutputHelper output)
+    public EnterExitUnitDemo(ITestOutputHelper output)
         : base(output)
     {
     }
@@ -35,7 +35,7 @@ public class MonitorUnitDemo : UnitDemoBase
     {
         List<Thread> threads = new();
 
-        for (var i = 'A'; i < 'F'; i++)
+        for (var i = 'a'; i < 'f'; i++)
         {
             char c = i;
             threads.Add(new Thread(() => Write(c)));
@@ -52,10 +52,10 @@ public class MonitorUnitDemo : UnitDemoBase
         Output.WriteLine(_resource.ToString());
 
         // Output:
-        // AAAAAAAAAA
-        // BBBBBBBBBB
-        // CCCCCCCCCC
-        // DDDDDDDDDD
-        // EEEEEEEEEE
+        // aaaaaaaaaa
+        // bbbbbbbbbb
+        // cccccccccc
+        // dddddddddd
+        // eeeeeeeeee
     }
 }
