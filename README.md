@@ -9,7 +9,7 @@
 4. [Thread info: id, name, culture, is background][threads-4]
 5. [`IsAlive` in different thread life states][threads-5]
 6. [`Join()`, Sequential writing by joined threads][threads-6]
-7. [`Join(timeout)`, Joining a thread after timeout.][threads-7]
+7. [`Join(timeout)`, Joining a thread after timeout][threads-7]
 8. [`Abort()`][threads-8]
 9. [`Abort(stateInfo)`, `ThreadAbortException`][threads-9]
 10. [`ThreadPriority`][threads-10]
@@ -36,9 +36,9 @@
 ### Threads Sync
 1. [`lock`][threads.sync-1]
 2. `Monitor`
-    - [`Enter()`, `Exit()`][threads.sync-2.1]
-    - [`IsEntered()`][threads.sync-2.2]
-    - [`Wait(timeout)`][threads.sync-2.3]
+    - [`Enter()`, `Exit()`, Sequential writing to a single resource][threads.sync-2.1]
+    - [`IsEntered()` before/in/after `lock`][threads.sync-2.2]
+    - [`Wait(timeout)` with thread state logging][threads.sync-2.3]
 
 [threads.sync-1]:.Net/Research/Threads.Sync/LockUnitDemo.cs
 [threads.sync-2.1]:.Net/Research/Threads.Sync/Monitors/EnterExitUnitDemo.cs
