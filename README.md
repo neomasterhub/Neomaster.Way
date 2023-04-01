@@ -15,9 +15,8 @@
 10. [`ThreadPriority`][threads-10]
 11. [Affinity parameterized][threads-11]
 12. [Affinity programmed][threads-12]
-13. `Suspend()`, `Resume()`
-    - [Sequential cycles][threads-13.1]
-    - [Tick tock][threads-13.2]
+13. [`Suspend()`, `Resume()`, Sequential cycles][threads-13]
+    - [Tick tock][threads-13.1]
 
 [threads-1]:.Net/Research/Threads/CreationStartParallelWritingUnitDemo.cs
 [threads-2]:.Net/Research/Threads.Background/Program.cs
@@ -31,8 +30,8 @@
 [threads-10]:.Net/Research/Threads.Priority/Program.cs
 [threads-11]:.Net/Research/Threads.AffinityParameterized
 [threads-12]:.Net/Research/Threads.AffinityProgrammed/Program.cs
-[threads-13.1]:.Net/Research/Threads.SuspendResume/Program.cs
-[threads-13.2]:.Net/Research/Threads.SuspendResume.TickTock/Program.cs
+[threads-13]:.Net/Research/Threads.SuspendResume/Program.cs
+[threads-13.1]:.Net/Research/Threads.SuspendResume.TickTock/Program.cs
 
 ### Threads Sync
 1. [`lock`][threads.sync-1]
@@ -41,5 +40,5 @@
     - [`IsEntered()`][threads.sync-2.2]
 
 [threads.sync-1]:.Net/Research/Threads.Sync/LockUnitDemo.cs
-[threads.sync-2.1]:.Net/Research/Threads.Sync/MonitorUnitDemo.cs
+[threads.sync-2.1]:.Net/Research/Threads.Sync/Monitors/EnterExitUnitDemo.cs
 [threads.sync-2.2]:.Net/Research/Threads.Sync/Monitors/IsEnteredUnitDemo.cs
