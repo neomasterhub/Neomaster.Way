@@ -4,13 +4,14 @@ using Xunit.Abstractions;
 
 namespace Threads.Sync.Monitors;
 
-public class PulseWaitTickTockUnitDemo : UnitDemoBase
+public class PulseWaitTickTockWithNoiseUnitDemo : UnitDemoBase
 {
     private static readonly object _locked = new();
     private static readonly int _limit = 10;
+    private static int _count = 0;
     private static string _signals = string.Empty;
 
-    public PulseWaitTickTockUnitDemo(ITestOutputHelper output)
+    public PulseWaitTickTockWithNoiseUnitDemo(ITestOutputHelper output)
         : base(output)
     {
     }
@@ -19,13 +20,16 @@ public class PulseWaitTickTockUnitDemo : UnitDemoBase
     {
         lock (_locked)
         {
-            while (_signals.Length < _limit)
+            while (_count < _limit)
             {
+                _count++;
                 _signals += signal;
+
+                Thread.Sleep(100);
 
                 Monitor.Pulse(_locked);
 
-                if (_signals.Length != _limit)
+                if (_count != _limit)
                 {
                     Monitor.Wait(_locked);
                 }
@@ -33,30 +37,37 @@ public class PulseWaitTickTockUnitDemo : UnitDemoBase
         }
     }
 
-    [Fact(DisplayName = "Pulse(), Wait(), Tick tock")]
+    [Fact(DisplayName = "Pulse(), Wait(), Tick tock with noise")]
     public void Demo()
     {
-        var tick = new Thread(() => Beep('*'));
-        var tock = new Thread(() => Beep('.'));
+        var tick = new Thread(() => Beep('\''));
+        var tock = new Thread(() => Beep('\"'));
+        var noise = new Thread(() =>
+        {
+            while (tick.IsAlive && tock.IsAlive)
+            {
+                _signals += '.';
+
+                Thread.Sleep(30);
+            }
+        });
 
         tick.Start();
-
         while (tick.ThreadState != ThreadState.WaitSleepJoin)
         {
         }
 
         tock.Start();
-
-        tick.Join();
-        tock.Join();
+        noise.Start();
+        noise.Join();
 
         Output.WriteLine($"limit: {_limit}");
-        Output.WriteLine($"count: {_signals.Length}");
+        Output.WriteLine($"count: {_count}");
         Output.WriteLine($"signals: {_signals}");
 
         // Output:
         // limit: 10
         // count: 10
-        // signals: *.*.*.*.*.
+        // signals: '...."....'..."....'..."....'..."...'...."...
     }
 }

@@ -41,6 +41,7 @@
     - [`Wait(timeout)` with thread state logging][threads.sync-2.3]
     - [`PulseAll()`][threads.sync-2.4]
     - [`Pulse()`, `Wait()`, Tick tock][threads.sync-2.5]
+    - [`Pulse()`, `Wait()`, Tick tock with noise][threads.sync-2.6]
 
 [threads.sync-1]:.Net/Research/Threads.Sync/LockUnitDemo.cs
 [threads.sync-2.1]:.Net/Research/Threads.Sync/Monitors/EnterExitUnitDemo.cs
@@ -48,3 +49,4 @@
 [threads.sync-2.3]:.Net/Research/Threads.Sync/Monitors/WaitUnitDemo.cs
 [threads.sync-2.4]:.Net/Research/Threads.Sync/Monitors/PulseAllUnitDemo.cs
 [threads.sync-2.5]:.Net/Research/Threads.Sync/Monitors/PulseWaitTickTockUnitDemo.cs
+[threads.sync-2.6]:.Net/Research/Threads.Sync/Monitors/PulseWaitTickTockWithNoiseUnitDemo.cs
