@@ -12,6 +12,7 @@
 		<RepositoryUrl>https://github.com/neomasterhub/Neomaster.Way/tree/master/.Net/NuGet/Neomaster.Extensions.Exception</RepositoryUrl>
 		<Description>Retrieves all internal exceptions of the exception tree, including AggregateException.</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Configurations>Debug;Release;Demo</Configurations>
 	</PropertyGroup>
 
 	<ItemGroup>
