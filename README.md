@@ -38,7 +38,9 @@
 2. `Monitor`
     - [`Enter()`, `Exit()`][threads.sync-2.1]
     - [`IsEntered()`][threads.sync-2.2]
+    - [`Wait(timeout)`][threads.sync-2.3]
 
 [threads.sync-1]:.Net/Research/Threads.Sync/LockUnitDemo.cs
 [threads.sync-2.1]:.Net/Research/Threads.Sync/Monitors/EnterExitUnitDemo.cs
 [threads.sync-2.2]:.Net/Research/Threads.Sync/Monitors/IsEnteredUnitDemo.cs
+[threads.sync-2.3]:.Net/Research/Threads.Sync/Monitors/WaitUnitDemo.cs
