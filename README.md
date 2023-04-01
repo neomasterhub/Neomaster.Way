@@ -39,8 +39,10 @@
     - [`Enter()`, `Exit()`, Sequential writing to a single resource][threads.sync-2.1]
     - [`IsEntered()` before/in/after `lock`][threads.sync-2.2]
     - [`Wait(timeout)` with thread state logging][threads.sync-2.3]
+    - [`PulseAll()`][threads.sync-2.4]
 
 [threads.sync-1]:.Net/Research/Threads.Sync/LockUnitDemo.cs
 [threads.sync-2.1]:.Net/Research/Threads.Sync/Monitors/EnterExitUnitDemo.cs
 [threads.sync-2.2]:.Net/Research/Threads.Sync/Monitors/IsEnteredUnitDemo.cs
 [threads.sync-2.3]:.Net/Research/Threads.Sync/Monitors/WaitUnitDemo.cs
+[threads.sync-2.4]:.Net/Research/Threads.Sync/Monitors/PulseAllUnitDemo.cs
