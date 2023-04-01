@@ -1,0 +1,23 @@
+<Project>
+	<Choose>
+		<When Condition=" '$(Configuration)'=='Release' ">
+			<ItemGroup>
+				<Compile Remove="**\*UnitDemo*.cs"/>
+				<Compile Remove="**\*UnitTests*.cs"/>
+				<Compile Remove="**\*Fixture*.cs"/>
+			</ItemGroup>
+		</When>
+
+		<When Condition=" '$(Configuration)'=='Debug' ">
+			<ItemGroup>
+				<Compile Remove="**\*UnitDemo*.cs"/>
+			</ItemGroup>
+		</When>
+
+		<When Condition=" '$(Configuration)'=='Demo' ">
+			<ItemGroup>
+				<Compile Remove="**\*UnitTests*.cs"/>
+			</ItemGroup>	
+		</When>
+	</Choose>
+</Project>

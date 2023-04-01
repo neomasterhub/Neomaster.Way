@@ -27,8 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{58534930-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B14FE8EE-FD13-4712-ADBB-478FD058CE48}"
 	ProjectSection(SolutionItems) = preProject
-		.Net\Tests\Demos.playlist = .Net\Tests\Demos.playlist
-		.Net\Tests\Tests.playlist = .Net\Tests\Tests.playlist
+		.Net\Tests\file-filter.targets = .Net\Tests\file-filter.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDBA7368-2E57-4386-BFF9-A42A734490C9}"
@@ -63,7 +62,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.SuspendResume.TickT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.Sync", ".Net\Research\Threads.Sync\Threads.Sync.csproj", "{DF50310D-D766-46B6-A847-CDAF02ABF61A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardsTests6", ".Net\Tests\StandardsTests6\StandardsTests6.csproj", "{974A01C2-D87E-4D80-BEFE-F6E11B7242C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StandardsTests6", ".Net\Tests\StandardsTests6\StandardsTests6.csproj", "{974A01C2-D87E-4D80-BEFE-F6E11B7242C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
