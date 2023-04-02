@@ -5,9 +5,9 @@ using Xunit.Abstractions;
 
 namespace Threads.Pool;
 
-public class CancelAfterTimeoutUnitDemo : UnitDemoBase
+public class CancelAfterUnitDemo : UnitDemoBase
 {
-    public CancelAfterTimeoutUnitDemo(ITestOutputHelper output)
+    public CancelAfterUnitDemo(ITestOutputHelper output)
         : base(output)
     {
     }
@@ -27,7 +27,7 @@ public class CancelAfterTimeoutUnitDemo : UnitDemoBase
         Output.WriteLine($"t2: {counter.Count}");
 
         // Output:
-        // t1: 7
-        // t2: 7
+        // t1: B
+        // t2: B
     }
 }
