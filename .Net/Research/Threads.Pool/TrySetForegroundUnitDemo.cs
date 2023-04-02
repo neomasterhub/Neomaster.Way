@@ -13,7 +13,7 @@ public class TrySetForegroundUnitDemo : UnitDemoBase
     {
     }
 
-    [Fact]
+    [Fact(DisplayName = "Failed to set thread pool thread to foreground")]
     public void Demo()
     {
         WaitCallback callback = state =>
