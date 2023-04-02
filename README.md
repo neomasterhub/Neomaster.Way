@@ -33,7 +33,7 @@
 [threads-13]:.Net/Research/Threads.SuspendResume/Program.cs
 [threads-13.1]:.Net/Research/Threads.SuspendResume.TickTock/Program.cs
 
-### Threads Sync
+### Threads.Sync
 1. [`lock`][threads.sync-1]
 2. `Monitor`
     - [`Enter()`, `Exit()`, Sequential writing to a single resource][threads.sync-2.1]
@@ -54,7 +54,7 @@
 [threads.sync-2.6]:.Net/Research/Threads.Sync/Monitors/PulseWaitTickTockWithNoiseUnitDemo.cs
 [threads.sync-3.1]:.Net/Research/Threads.Sync/MethodAttributes/SynchronizedUnitDemo.cs
 
-### Threads Pool
+### Threads.Pool
 1. [Background][threads.pool-1]
 
 [threads.pool-1]:.Net/Research/Threads.Pool/BackgroundUnitDemo.cs
