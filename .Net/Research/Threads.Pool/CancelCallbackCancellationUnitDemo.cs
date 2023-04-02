@@ -17,10 +17,13 @@ public class CancelCallbackCancellationUnitDemo : UnitDemoBase
     {
         var cts = new CancellationTokenSource();
         var counter = new Counter(cts.Token);
-        ThreadPool.QueueUserWorkItem(_ => counter.CountAsync());
 
+        Output.WriteLine($"can be canceled: {counter.CancellationToken.CanBeCanceled}");
+        counter.CancellationToken = CancellationToken.None;
+        Output.WriteLine($"can be canceled: {counter.CancellationToken.CanBeCanceled}");
+
+        ThreadPool.QueueUserWorkItem(_ => counter.CountAsync());
         Thread.Sleep(100);
-        counter.CancellationToken = CancellationToken.None; // or cts2.Token
         cts.Cancel();
 
         Thread.Sleep(100);
@@ -29,6 +32,8 @@ public class CancelCallbackCancellationUnitDemo : UnitDemoBase
         Output.WriteLine($"t2: {counter.Count}");
 
         // Output:
+        // can be canceled: True
+        // can be canceled: False
         // t1: 16
         // t2: 23
     }
