@@ -13,7 +13,7 @@ public class BackgroundUnitDemo : UnitDemoBase
     {
     }
 
-    [Fact]
+    [Fact(DisplayName = "Thread pool thread is always background")]
     public void Demo()
     {
         WaitCallback callback = state =>
