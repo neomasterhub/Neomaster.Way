@@ -25,7 +25,7 @@ public class Counter
             }
 
             _count++;
-            Thread.Sleep(10);
+            Thread.Sleep(20);
         }
     }
 }
