@@ -19,7 +19,7 @@ public class CancelCallbackCancellationUnitDemo : UnitDemoBase
         var counter = new Counter(cts.Token);
         ThreadPool.QueueUserWorkItem(_ => counter.CountAsync());
 
-        Thread.Sleep(50);
+        Thread.Sleep(100);
         counter.CancellationToken = CancellationToken.None; // or cts2.Token
         cts.Cancel();
 
@@ -27,5 +27,9 @@ public class CancelCallbackCancellationUnitDemo : UnitDemoBase
         Output.WriteLine($"t1: {counter.Count}");
         Thread.Sleep(100);
         Output.WriteLine($"t2: {counter.Count}");
+
+        // Output:
+        // t1: 16
+        // t2: 23
     }
 }
