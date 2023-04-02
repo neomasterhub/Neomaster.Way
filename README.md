@@ -61,8 +61,8 @@
 4. [Deferred cancellation of an infinite asynchronous loop][threads.pool-4]
 5. [Cancel cancellation][threads.pool-5]
 6. [Registration of cancel event delegates][threads.pool-6]
-7. [`Cancel(false)`][threads.pool-7]
-8. [`Cancel(true)`][threads.pool-8]
+7. [Calling registered delegates before an exception occurs][threads.pool-7]
+8. [Calling registered delegates after an exception occurs][threads.pool-8]
 
 [threads.pool-1]:.Net/Research/Threads.Pool/BackgroundUnitDemo.cs
 [threads.pool-2]:.Net/Research/Threads.Pool/TrySetForegroundUnitDemo.cs
@@ -70,5 +70,5 @@
 [threads.pool-4]:.Net/Research/Threads.Pool/CancelAfterUnitDemo.cs
 [threads.pool-5]:.Net/Research/Threads.Pool/CancelCancellationUnitDemo.cs
 [threads.pool-6]:.Net/Research/Threads.Pool/CancelEventDelegateUnitDemo.cs
-[threads.pool-7]:.Net/Research/Threads.Pool/CancelFalseUnitDemo.cs
-[threads.pool-8]:.Net/Research/Threads.Pool/CancelTrueUnitDemo.cs
+[threads.pool-7]:.Net/Research/Threads.Pool/CancelTrueUnitDemo.cs
+[threads.pool-8]:.Net/Research/Threads.Pool/CancelFalseUnitDemo.cs
