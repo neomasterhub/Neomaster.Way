@@ -5,9 +5,9 @@ using Xunit.Abstractions;
 
 namespace Threads.Pool;
 
-public class CancelCallbackCancellationUnitDemo : UnitDemoBase
+public class CancelCancellationUnitDemo : UnitDemoBase
 {
-    public CancelCallbackCancellationUnitDemo(ITestOutputHelper output)
+    public CancelCancellationUnitDemo(ITestOutputHelper output)
         : base(output)
     {
     }
@@ -23,8 +23,7 @@ public class CancelCallbackCancellationUnitDemo : UnitDemoBase
         Output.WriteLine($"can be canceled: {counter.CancellationToken.CanBeCanceled}");
 
         ThreadPool.QueueUserWorkItem(_ => counter.CountAsync());
-        Thread.Sleep(100);
-        cts.Cancel();
+        cts.CancelAfter(50);
 
         Thread.Sleep(100);
         Output.WriteLine($"t1: {counter.Count}");
@@ -34,7 +33,7 @@ public class CancelCallbackCancellationUnitDemo : UnitDemoBase
         // Output:
         // can be canceled: True
         // can be canceled: False
-        // t1: 16
-        // t2: 23
+        // t1: C
+        // t2: C + d
     }
 }
