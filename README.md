@@ -60,9 +60,11 @@
 3. [`CancellationTokenSource.Cancel()`][threads.pool-3]
 4. [`CancellationTokenSource.CancelAfter(timeout)`][threads.pool-4]
 5. [`CancellationToken.None`, Cancel cancellation][threads.pool-5]
+6. [`CancellationTokenSource.Register()`, Cancel event delegate][threads.pool-6]
 
 [threads.pool-1]:.Net/Research/Threads.Pool/BackgroundUnitDemo.cs
 [threads.pool-2]:.Net/Research/Threads.Pool/TrySetForegroundUnitDemo.cs
 [threads.pool-3]:.Net/Research/Threads.Pool/CancelUnitDemo.cs
 [threads.pool-4]:.Net/Research/Threads.Pool/CancelAfterUnitDemo.cs
 [threads.pool-5]:.Net/Research/Threads.Pool/CancelCancellationUnitDemo.cs
+[threads.pool-6]:.Net/Research/Threads.Pool/CancelEventDelegateUnitDemo.cs
