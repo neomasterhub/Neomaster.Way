@@ -58,7 +58,9 @@
 1. [Background][threads.pool-1]
 2. [Try set foreground][threads.pool-2]
 3. [`CancellationToken`, Callback cancellation][threads.pool-3]
+4. [`CancellationToken.None`, Cancel callback cancellation][threads.pool-4]
 
 [threads.pool-1]:.Net/Research/Threads.Pool/BackgroundUnitDemo.cs
 [threads.pool-2]:.Net/Research/Threads.Pool/TrySetForegroundUnitDemo.cs
 [threads.pool-3]:.Net/Research/Threads.Pool/CallbackCancellationUnitDemo.cs
+[threads.pool-4]:.Net/Research/Threads.Pool/CancelCallbackCancellationUnitDemo.cs
