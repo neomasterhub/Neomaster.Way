@@ -12,7 +12,7 @@ public class CancelFalseUnitDemo : UnitDemoBase
     {
     }
 
-    [Fact]
+    [Fact(DisplayName = "Calling registered delegates after an exception occurs")]
     public void Demo()
     {
         var cts = new CancellationTokenSource();
