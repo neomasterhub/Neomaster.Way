@@ -57,10 +57,10 @@
 ### Threads.Pool
 1. [Background][threads.pool-1]
 2. [Try set foreground][threads.pool-2]
-3. [`CancellationTokenSource.Cancel()`][threads.pool-3]
-4. [`CancellationTokenSource.CancelAfter(timeout)`][threads.pool-4]
-5. [`CancellationToken.None`, Cancel cancellation][threads.pool-5]
-6. [`CancellationTokenSource.Register()`, Cancel event delegate][threads.pool-6]
+3. [Cancellation of an infinite asynchronous loop][threads.pool-3]
+4. [Deferred cancellation of an infinite asynchronous loop][threads.pool-4]
+5. [Cancel cancellation][threads.pool-5]
+6. [Registration of cancel event delegates][threads.pool-6]
 
 [threads.pool-1]:.Net/Research/Threads.Pool/BackgroundUnitDemo.cs
 [threads.pool-2]:.Net/Research/Threads.Pool/TrySetForegroundUnitDemo.cs

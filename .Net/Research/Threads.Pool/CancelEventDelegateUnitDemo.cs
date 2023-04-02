@@ -12,11 +12,13 @@ public class CancelEventDelegateUnitDemo : UnitDemoBase
     {
     }
 
-    [Fact]
+    [Fact(DisplayName = "Registration of cancel event delegates")]
     public void Demo()
     {
         var cts = new CancellationTokenSource();
-        cts.Token.Register(() => Output.WriteLine("canceled"));
+        cts.Token.Register(() => Output.WriteLine("canceled 1"));
+        cts.Token.Register(() => Output.WriteLine("canceled 2"));
+        cts.Token.Register(() => Output.WriteLine("canceled 3"));
 
         var counter = new Counter(cts.Token);
         ThreadPool.QueueUserWorkItem(_ => counter.CountAsync());
@@ -25,6 +27,8 @@ public class CancelEventDelegateUnitDemo : UnitDemoBase
         Thread.Sleep(60);
 
         // Output:
-        // canceled
+        // canceled 3
+        // canceled 2
+        // canceled 1
     }
 }

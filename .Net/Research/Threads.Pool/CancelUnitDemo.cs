@@ -12,7 +12,7 @@ public class CancelUnitDemo : UnitDemoBase
     {
     }
 
-    [Fact]
+    [Fact(DisplayName = "Cancellation of an infinite asynchronous loop")]
     public void Demo()
     {
         var cts = new CancellationTokenSource();
@@ -28,7 +28,7 @@ public class CancelUnitDemo : UnitDemoBase
         Output.WriteLine($"t2: {counter.Count}");
 
         // Output:
-        // t1: A
-        // t2: A
+        // t1: 9
+        // t2: 9
     }
 }

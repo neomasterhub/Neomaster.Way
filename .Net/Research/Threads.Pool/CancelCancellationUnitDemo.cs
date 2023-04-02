@@ -12,7 +12,7 @@ public class CancelCancellationUnitDemo : UnitDemoBase
     {
     }
 
-    [Fact]
+    [Fact(DisplayName = "How to use CancellationToken.None")]
     public void Demo()
     {
         var cts = new CancellationTokenSource();
@@ -33,7 +33,7 @@ public class CancelCancellationUnitDemo : UnitDemoBase
         // Output:
         // can be canceled: True
         // can be canceled: False
-        // t1: C
-        // t2: C + d
+        // t1: 9
+        // t2: 16
     }
 }
