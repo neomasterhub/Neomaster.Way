@@ -66,8 +66,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StandardsTests6", ".Net\Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.Pool", ".Net\Research\Threads.Pool\Threads.Pool.csproj", "{5B385467-9B9A-4FBC-957C-B3A662786148}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatR.Notification", ".Net\Research\MediatR.Notification\MediatR.Notification.csproj", "{2215EDC5-0484-4790-9601-E39CE27DED7C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,12 +163,6 @@ Global
 		{5B385467-9B9A-4FBC-957C-B3A662786148}.Demo|Any CPU.Build.0 = Demo|Any CPU
 		{5B385467-9B9A-4FBC-957C-B3A662786148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B385467-9B9A-4FBC-957C-B3A662786148}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2215EDC5-0484-4790-9601-E39CE27DED7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2215EDC5-0484-4790-9601-E39CE27DED7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2215EDC5-0484-4790-9601-E39CE27DED7C}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
-		{2215EDC5-0484-4790-9601-E39CE27DED7C}.Demo|Any CPU.Build.0 = Debug|Any CPU
-		{2215EDC5-0484-4790-9601-E39CE27DED7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2215EDC5-0484-4790-9601-E39CE27DED7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -196,7 +188,6 @@ Global
 		{DF50310D-D766-46B6-A847-CDAF02ABF61A} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{974A01C2-D87E-4D80-BEFE-F6E11B7242C7} = {B14FE8EE-FD13-4712-ADBB-478FD058CE48}
 		{5B385467-9B9A-4FBC-957C-B3A662786148} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
-		{2215EDC5-0484-4790-9601-E39CE27DED7C} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
