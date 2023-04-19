@@ -6,7 +6,7 @@ namespace Threads.Pool.ActivityTypes;
 /// <see href="https://www.cazzulino.com/callcontext-netstandard-netcore.html">CallContext migration for .NETStandard and .NETCore</see>.
 /// </summary>
 /// <typeparam name="T">Data item type.</typeparam>
-public static class ThreadContext<T>
+public static class CallContext<T>
 {
     private static readonly ConcurrentDictionary<string, AsyncLocal<T>> _state = new();
 
