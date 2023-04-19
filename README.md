@@ -63,7 +63,7 @@
 6. [Registration of cancel event delegates][threads.pool-6]
 7. [`Cancel(true)`, Calling registered delegates before an exception occurs][threads.pool-7]
 8. [`Cancel(false)`, Calling registered delegates after an exception occurs][threads.pool-8]
-9. [Thread context data][threads.pool-9]
+9. [Thread context][threads.pool-9]
 
 [threads.pool-1]:.Net/Research/Threads.Pool/BackgroundUnitDemo.cs
 [threads.pool-2]:.Net/Research/Threads.Pool/TrySetForegroundUnitDemo.cs
