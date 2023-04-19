@@ -72,3 +72,8 @@
 [threads.pool-6]:.Net/Research/Threads.Pool/CancelEventDelegateUnitDemo.cs
 [threads.pool-7]:.Net/Research/Threads.Pool/CancelTrueUnitDemo.cs
 [threads.pool-8]:.Net/Research/Threads.Pool/CancelFalseUnitDemo.cs
+
+### MediatR
+1. [Notification][mediatr-1]
+
+[mediatr-1]:.Net/Research/MediatR.Notification
