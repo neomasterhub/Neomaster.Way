@@ -5,7 +5,7 @@
 
 `Ctrl + Shift + F`
 
-File types: `!*\bin\*;!*\obj\*;*\.Net\*;`
+File types: `!*\bin\*;!*\obj\*;`
 
 ## Research
 
