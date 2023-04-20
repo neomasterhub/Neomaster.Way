@@ -3,7 +3,6 @@
 1. [Research](#research)
 2. [Notes](#notes)
 
-
 ## Research <a name="research"></a>
 
 ### Threads
@@ -95,6 +94,12 @@
 [tasks-4]:.Net/Research/Tasks/TaskExceptionHandleUnitDemo.cs
 [tasks-5]:.Net/Research/Tasks/TaskExceptionUnhandledAggregate.cs
 [tasks-6]:.Net/Research/Tasks/TaskExceptionUnitDemo.cs
+
+## Console
+
+1. [Host][console-1]
+
+[console-1]:.Net/Research/Console.Host/Program.cs
 
 ---
 
