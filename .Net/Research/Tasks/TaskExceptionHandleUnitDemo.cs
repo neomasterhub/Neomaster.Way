@@ -36,9 +36,9 @@ public class TaskExceptionHandleUnitDemo : UnitDemoBase
                     return handled;
                 });
             }
-            catch (AggregateException)
+            catch
             {
-                throw;
+                throw; // unhandled
             }
         }
 
