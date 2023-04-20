@@ -22,24 +22,17 @@ public class TaskExceptionHandleUnitDemo : UnitDemoBase
         }
         catch (AggregateException ae)
         {
-            try
+            ae.Handle(ie =>
             {
-                ae.Handle(ie =>
+                var handled = ie is StackOverflowException;
+
+                if (handled)
                 {
-                    var handled = ie is StackOverflowException;
+                    Output.WriteLine(ie.Message);
+                }
 
-                    if (handled)
-                    {
-                        Output.WriteLine(ie.Message);
-                    }
-
-                    return handled;
-                });
-            }
-            catch
-            {
-                throw; // unhandled
-            }
+                return handled;
+            });
         }
 
         // Output:
