@@ -85,8 +85,8 @@
 1. [Creation][tasks-1]
 2. [`Wait()`][tasks-2]
 3. [Task exception][tasks-3]
-4. [Task exception `Handle()`][tasks-4]
-5. [Task exception `Handle()` throws unhandled exceptions aggregate][tasks-5]
+4. [`Handle()`][tasks-4]
+5. [`Handle()` throws unhandled exception aggregate][tasks-5]
 
 [tasks-1]:.Net/Research/Tasks/TaskUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskWaitUnitDemo.cs
