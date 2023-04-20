@@ -14,7 +14,7 @@ public class TaskExceptionHandleUnitDemo : UnitDemoBase
     [Fact]
     public void Demo()
     {
-        var task = Task.Run(() => throw new StackOverflowException("test"));
+        var task = Task.Run(() => throw new StackOverflowException("handled"));
 
         try
         {
@@ -36,6 +36,6 @@ public class TaskExceptionHandleUnitDemo : UnitDemoBase
         }
 
         // Output:
-        // test
+        // handled
     }
 }
