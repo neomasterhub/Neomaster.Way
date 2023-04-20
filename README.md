@@ -1,5 +1,12 @@
 # Neomaster Way
 
+## Notes
+### Find and Replace
+
+`Ctrl + Shift + F`
+
+File types: `!*\bin\*;!*\obj\*;*\.Net\*;`
+
 ## Research
 
 ### Threads
