@@ -11,6 +11,7 @@
 	<Import Project="$(SolutionDir).Net\Tests\TestEngine6\testing.targets" />
 	<ItemGroup>
 	  <Compile Include="TaskUnitDemo.cs" />
+	  <Compile Include="TaskWaitUnitDemo.cs" />
 	</ItemGroup>
 
 </Project>

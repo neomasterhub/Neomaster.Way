@@ -83,8 +83,10 @@
 
 ### Tasks
 1. [Creation][tasks-1]
+2. [`Wait()`][tasks-2]
 
 [tasks-1]:.Net/Research/Tasks/TaskUnitDemo.cs
+[tasks-2]:.Net/Research/Tasks/TaskWaitUnitDemo.cs
 
 ---
 
