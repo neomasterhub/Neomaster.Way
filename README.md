@@ -85,10 +85,12 @@
 1. [Creation][tasks-1]
 2. [`Wait()`][tasks-2]
 3. [Task exception][tasks-3]
+4. [`Handle()`][tasks-4]
 
 [tasks-1]:.Net/Research/Tasks/TaskUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskWaitUnitDemo.cs
 [tasks-3]:.Net/Research/Tasks/TaskExceptionUnitDemo.cs
+[tasks-4]:.Net/Research/Tasks/TaskExceptionHandleUnitDemo.cs
 
 ---
 
