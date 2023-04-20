@@ -1,8 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace Console.Host;
-
-public interface IFoo
+internal interface IFoo
 {
     string Get();
 }
