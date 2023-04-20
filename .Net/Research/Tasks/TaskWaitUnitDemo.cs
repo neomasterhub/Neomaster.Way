@@ -41,12 +41,16 @@ public class TaskWaitUnitDemo : UnitDemoBase
         }
         catch (OperationCanceledException)
         {
+            _resource += 'e';
             _resource += '*';
         }
+
+        Thread.Sleep(100);
+        _resource += '*';
 
         Output.WriteLine(_resource);
 
         // Output:
-        // --------*||-|--||---|*
+        // --------*||--|--|||e*||-||---*
     }
 }
