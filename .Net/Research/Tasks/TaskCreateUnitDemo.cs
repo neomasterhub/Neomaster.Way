@@ -4,11 +4,11 @@ using Xunit.Abstractions;
 
 namespace Tasks;
 
-public class TaskUnitDemo : UnitDemoBase
+public class TaskCreateUnitDemo : UnitDemoBase
 {
     private static string _resource = string.Empty;
 
-    public TaskUnitDemo(ITestOutputHelper output)
+    public TaskCreateUnitDemo(ITestOutputHelper output)
         : base(output)
     {
     }
