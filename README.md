@@ -84,9 +84,11 @@
 ### Tasks
 1. [Creation][tasks-1]
 2. [`Wait()`][tasks-2]
+3. [`Task exception`][tasks-3]
 
 [tasks-1]:.Net/Research/Tasks/TaskUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskWaitUnitDemo.cs
+[tasks-3]:.Net/Research/Tasks/TaskExceptionUnitDemo.cs
 
 ---
 
