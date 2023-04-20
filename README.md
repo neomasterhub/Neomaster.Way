@@ -82,11 +82,11 @@
 [threads.pool-10]:.Net/Research/Threads.Pool/ThreadContextFlowUnitDemo.cs
 
 ### Tasks
-1. [Creation][tasks-1]
+1. [Create][tasks-1]
 2. [`Wait()`][tasks-2]
 3. [Task exception][tasks-3]
 4. [`Handle()`][tasks-4]
-5. [`Handle()` throws unhandled exception aggregate][tasks-5]
+5. [`Handle()` throws an aggregate of unhandled exceptions][tasks-5]
 
 [tasks-1]:.Net/Research/Tasks/TaskUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskWaitUnitDemo.cs
