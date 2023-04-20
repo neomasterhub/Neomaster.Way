@@ -45,5 +45,8 @@ public class TaskWaitUnitDemo : UnitDemoBase
         }
 
         Output.WriteLine(_resource);
+
+        // Output:
+        // --------*||-|--||---|*
     }
 }
