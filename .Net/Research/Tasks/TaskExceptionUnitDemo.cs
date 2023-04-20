@@ -14,29 +14,20 @@ public class TaskExceptionUnitDemo : UnitDemoBase
     [Fact]
     public void Demo()
     {
-        var task1 = Task.Run(() => throw new StackOverflowException("test 1"));
-        var task2 = Task.Run(() => throw new StackOverflowException("test 2"));
+        var task = Task.Run(() =>
+        {
+            Thread.Sleep(50);
+            throw new StackOverflowException("test");
+        });
 
-        try
-        {
-            task1.Wait();
-        }
-        catch (AggregateException ae)
-        {
-            foreach (var ie in ae.InnerExceptions)
-            {
-                if (ie is StackOverflowException)
-                {
-                    Output.WriteLine(ie.Message); // handling
-                }
-                else
-                {
-                    throw; // unhandled
-                }
-            }
-        }
+        Output.WriteLine($"task.Exception: {task.Exception}");
+
+        Thread.Sleep(100);
+
+        Output.WriteLine($"task.Exception: {task.Exception?.InnerExceptions[0].Message}");
 
         // Output:
-        // test 1
+        // task.Exception:
+        // task.Exception: test
     }
 }
