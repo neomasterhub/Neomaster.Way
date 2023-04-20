@@ -83,17 +83,17 @@
 ### Tasks
 1. [Create][tasks-1]
 2. [`Wait()`][tasks-2]
-3. [Throwing a task exception][tasks-3]
-4. [`Handle()`][tasks-4]
-5. [`Handle()` throws an aggregate of unhandled exceptions][tasks-5]
-6. [`Exception`][tasks-6]
+3. [`Exception`][tasks-3]
+4. [Throwing a task exception][tasks-4]
+5. [`Handle()`][tasks-5]
+6. [`Handle()` throws an aggregate of unhandled exceptions][tasks-6]
 
 [tasks-1]:.Net/Research/Tasks/TaskCreateUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskWaitUnitDemo.cs
-[tasks-3]:.Net/Research/Tasks/TaskExceptionThrowingUnitDemo.cs
-[tasks-4]:.Net/Research/Tasks/TaskExceptionHandleUnitDemo.cs
-[tasks-5]:.Net/Research/Tasks/TaskExceptionUnhandledAggregate.cs
-[tasks-6]:.Net/Research/Tasks/TaskExceptionUnitDemo.cs
+[tasks-3]:.Net/Research/Tasks/TaskExceptionUnitDemo.cs
+[tasks-4]:.Net/Research/Tasks/TaskExceptionThrowingUnitDemo.cs
+[tasks-5]:.Net/Research/Tasks/TaskExceptionHandleUnitDemo.cs
+[tasks-6]:.Net/Research/Tasks/TaskExceptionUnhandledAggregate.cs
 
 ### Console
 
