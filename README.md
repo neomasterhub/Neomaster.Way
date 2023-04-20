@@ -1,13 +1,10 @@
 # Neomaster Way
 
-## Notes
-### Find and Replace
+1. [Research](#research)
+2. [Notes](#notes)
 
-`Ctrl + Shift + F`
 
-File types: `!*\bin\*;!*\obj\*;`
-
-## Research
+## Research <a name="research"></a>
 
 ### Threads
 1. [Creation, Start, Parallel writing][threads-1]
@@ -88,3 +85,13 @@ File types: `!*\bin\*;!*\obj\*;`
 1. [Creation][tasks-1]
 
 [tasks-1]:.Net/Research/Tasks/TaskUnitDemo.cs
+
+---
+
+## Notes <a name="notes"></a>
+
+### Find and Replace
+
+`Ctrl + Shift + F`
+
+File types: `!*\bin\*;!*\obj\*;`
