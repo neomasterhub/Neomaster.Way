@@ -87,7 +87,7 @@
 3. [Task exception][tasks-3]
 4. [`Handle()`][tasks-4]
 5. [`Handle()` throws an aggregate of unhandled exceptions][tasks-5]
-6. [`Task.Exception`][tasks-6]
+6. [`Exception`][tasks-6]
 
 [tasks-1]:.Net/Research/Tasks/TaskCreateUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskWaitUnitDemo.cs
