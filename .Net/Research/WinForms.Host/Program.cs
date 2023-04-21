@@ -18,7 +18,8 @@ internal static class Program
         var services = new ServiceCollection();
 
         services
-            .AddScoped<Form1>();
+            .AddScoped<Form1>()
+            .AddScoped<IFoo, Foo>();
 
         using ServiceProvider serviceProvider = services.BuildServiceProvider();
         var form1 = serviceProvider.GetRequiredService<Form1>();
