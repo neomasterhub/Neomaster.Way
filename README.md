@@ -97,12 +97,6 @@
 [tasks-6]:.Net/Research/Tasks/TaskExceptionUnhandledAggregateUnitDemo.cs
 [tasks-7]:.Net/Research/Tasks/TaskResultUnitDemo.cs
 
-### Console
-
-1. [Host][console-1]
-
-[console-1]:.Net/Research/Console.Host/Program.cs
-
 ---
 
 ## Notes <a name="notes"></a>
