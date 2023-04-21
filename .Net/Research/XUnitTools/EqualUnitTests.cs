@@ -16,6 +16,16 @@ public class EqualUnitTests
     }
 
     [Fact]
+    public void ObjectSequences()
+    {
+        var s1 = new Box[] { new("red", 1) };
+        var s2 = new List<Box> { new("red", 1) };
+
+        Assert.Equal(s1, s2, new BoxComparer());
+        Assert.NotEqual(s1, s2);
+    }
+
+    [Fact]
     public void Structs()
     {
         var s1 = new Coords(1, 2);
