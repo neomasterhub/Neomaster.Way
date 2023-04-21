@@ -23,4 +23,13 @@ public class EqualUnitTests
 
         Assert.Equal(s1, s2);
     }
+
+    [Fact]
+    public void StructSequences()
+    {
+        var s1 = new int[] { 1, 2, 3 };
+        var s2 = new List<int> { 1, 2, 3 };
+
+        Assert.Equal(s1, s2);
+    }
 }
