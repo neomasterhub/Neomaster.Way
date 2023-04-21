@@ -100,9 +100,13 @@
 ### xUnitTest Tools
 1. [`Assert.Same()`][xut-1]
 2. [`Assert.Equal()`][xut-2]
+101. [`MockBehavior.Loose` vs `MockBehavior.Strict`][xut-101]
+102. [`AutoMock`][xut-102]
 
 [xut-1]:.Net/Research/XUnitTools/SameUnitTests.cs
 [xut-2]:.Net/Research/XUnitTools/EqualUnitTests.cs
+[xut-101]:.Net/Research/XUnitTools/LooseVsStrictMockUnitTests.cs
+[xut-102]:.Net/Research/XUnitTools/AutoMockUnitTests.cs
 
 ---
 
