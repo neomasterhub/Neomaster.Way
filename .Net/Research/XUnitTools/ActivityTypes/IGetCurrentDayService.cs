@@ -1,6 +1,6 @@
 ﻿namespace XUnitTools.ActivityTypes;
 
-internal interface IGetCurrentDayService
+public interface IGetCurrentDayService
 {
     int Get();
 }

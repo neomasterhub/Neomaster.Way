@@ -1,6 +1,6 @@
 ﻿namespace XUnitTools.ActivityTypes;
 
-internal interface IGetCurrentDatetimeService
+public interface IGetCurrentDatetimeService
 {
     DateTime Get();
 }
