@@ -8,10 +8,19 @@ public class EqualUnitTests
     [Fact]
     public void Objects()
     {
-        var obj1 = new Box("red", 1);
-        var obj2 = new Box("red", 1);
+        var o1 = new Box("red", 1);
+        var o2 = new Box("red", 1);
 
-        Assert.Equal(obj1, obj2, new BoxComparer());
-        Assert.NotEqual(obj1, obj2);
+        Assert.Equal(o1, o2, new BoxComparer());
+        Assert.NotEqual(o1, o2);
+    }
+
+    [Fact]
+    public void Structs()
+    {
+        Signal s1 = new();
+        Signal s2 = new();
+
+        Assert.Equal(s1, s2);
     }
 }
