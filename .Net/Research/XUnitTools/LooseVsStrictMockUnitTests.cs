@@ -9,10 +9,10 @@ public class LooseVsStrictMockUnitTests
     [Fact]
     public void Loose()
     {
-        var sutMock = new Mock<IGetCurrentDatetimeInfoService>(MockBehavior.Loose);
+        var sutMock = new Mock<IGetCurrentDayService>(MockBehavior.Loose);
         var sut = sutMock.Object;
 
-        var actual = sut.GetDay();
+        var actual = sut.Get();
 
         Assert.Equal(default(int), actual);
     }
@@ -20,10 +20,10 @@ public class LooseVsStrictMockUnitTests
     [Fact]
     public void Strict()
     {
-        var sutMock = new Mock<IGetCurrentDatetimeInfoService>(MockBehavior.Strict);
+        var sutMock = new Mock<IGetCurrentDayService>(MockBehavior.Strict);
         var sut = sutMock.Object;
 
-        var actual = Record.Exception(() => sut.GetDay());
+        var actual = Record.Exception(() => sut.Get());
 
         Assert.IsType<MockException>(actual);
 
