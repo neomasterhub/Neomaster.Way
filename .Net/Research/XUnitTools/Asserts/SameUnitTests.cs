@@ -1,7 +1,7 @@
 ﻿using Xunit;
 using XUnitTools.ActivityTypes;
 
-namespace XUnitTools;
+namespace XUnitTools.Asserts;
 
 public class SameUnitTests
 {
