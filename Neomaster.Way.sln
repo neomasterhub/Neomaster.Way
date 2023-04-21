@@ -70,6 +70,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks", ".Net\Research\Task
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console.Host", ".Net\Research\Console.Host\Console.Host.csproj", "{63868D5D-A7FB-4EFC-A3F5-FCE9CBED00EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms.Host", ".Net\Research\WinForms.Host\WinForms.Host.csproj", "{8C98E20D-8E5D-4DB2-B293-F917ABBBDEB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,12 @@ Global
 		{63868D5D-A7FB-4EFC-A3F5-FCE9CBED00EF}.Demo|Any CPU.Build.0 = Debug|Any CPU
 		{63868D5D-A7FB-4EFC-A3F5-FCE9CBED00EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63868D5D-A7FB-4EFC-A3F5-FCE9CBED00EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C98E20D-8E5D-4DB2-B293-F917ABBBDEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C98E20D-8E5D-4DB2-B293-F917ABBBDEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C98E20D-8E5D-4DB2-B293-F917ABBBDEB0}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C98E20D-8E5D-4DB2-B293-F917ABBBDEB0}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{8C98E20D-8E5D-4DB2-B293-F917ABBBDEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C98E20D-8E5D-4DB2-B293-F917ABBBDEB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -206,6 +214,7 @@ Global
 		{5B385467-9B9A-4FBC-957C-B3A662786148} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{C7299F9B-B96D-49D4-ACB9-F4EAAE6FE13D} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{63868D5D-A7FB-4EFC-A3F5-FCE9CBED00EF} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
+		{8C98E20D-8E5D-4DB2-B293-F917ABBBDEB0} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
