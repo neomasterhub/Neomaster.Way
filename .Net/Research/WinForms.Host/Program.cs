@@ -1,28 +1,26 @@
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using WinForms.Host;
 
 namespace DataManager;
 
 internal static class Program
 {
-    public static IConfiguration Configuration;
-
     [STAThread]
     private static void Main()
     {
-        Configuration = new ConfigurationBuilder()
-           .AddJsonFile("appsettings.json")
-           .Build();
+        ApplicationConfiguration.Initialize();
 
-        var services = new ServiceCollection();
+        var host = Host.CreateDefaultBuilder()
+            .ConfigureServices((hostContext, services) =>
+            {
+                // ... hostContext.Configuration ...
+                services
+                    .AddScoped<Form1>()
+                    .AddScoped<IFoo, Foo>();
+            })
+            .Build();
 
-        services
-            .AddScoped<Form1>()
-            .AddScoped<IFoo, Foo>();
-
-        using ServiceProvider serviceProvider = services.BuildServiceProvider();
-        var form1 = serviceProvider.GetRequiredService<Form1>();
-        Application.Run(form1);
+        Application.Run(host.Services.GetRequiredService<Form1>());
     }
 }
