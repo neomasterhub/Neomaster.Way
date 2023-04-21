@@ -1,9 +1,9 @@
 namespace WinForms.Host;
 
-public partial class Form1 : Form
+internal partial class Form1 : Form
 {
-    public Form1()
+    public Form1(IFoo foo)
     {
-        InitializeComponent();
+        MessageBox.Show(foo.Get(), "Foo");
     }
 }
