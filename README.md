@@ -97,6 +97,13 @@
 [tasks-6]:.Net/Research/Tasks/TaskExceptionUnhandledAggregateUnitDemo.cs
 [tasks-7]:.Net/Research/Tasks/TaskResultUnitDemo.cs
 
+### xUnitTest Tools
+1. [`Assert.Same()`][xut-1]
+2. [`Assert.Equal()`][xut-2]
+
+[xut-1]:.Net/Research/XUnitTools/SameUnitTests.cs
+[xut-2]:.Net/Research/XUnitTools/EqualUnitTests.cs
+
 ---
 
 ## Notes <a name="notes"></a>
