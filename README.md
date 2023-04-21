@@ -94,7 +94,7 @@
 [tasks-3]:.Net/Research/Tasks/TaskExceptionUnitDemo.cs
 [tasks-4]:.Net/Research/Tasks/TaskExceptionThrowingUnitDemo.cs
 [tasks-5]:.Net/Research/Tasks/TaskExceptionHandleUnitDemo.cs
-[tasks-6]:.Net/Research/Tasks/TaskExceptionUnhandledAggregate.cs
+[tasks-6]:.Net/Research/Tasks/TaskExceptionUnhandledAggregateUnitDemo.cs
 [tasks-7]:.Net/Research/Tasks/TaskResultUnitDemo.cs
 
 ### Console

@@ -4,9 +4,9 @@ using Xunit.Abstractions;
 
 namespace Tasks;
 
-public class TaskExceptionUnhandledAggregate : UnitDemoBase
+public class TaskExceptionUnhandledAggregateUnitDemo : UnitDemoBase
 {
-    public TaskExceptionUnhandledAggregate(ITestOutputHelper output)
+    public TaskExceptionUnhandledAggregateUnitDemo(ITestOutputHelper output)
         : base(output)
     {
     }
