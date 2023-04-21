@@ -18,8 +18,8 @@ public class EqualUnitTests
     [Fact]
     public void Structs()
     {
-        Signal s1 = new();
-        Signal s2 = new();
+        var s1 = new Coords(1, 2);
+        var s2 = new Coords(1, 2);
 
         Assert.Equal(s1, s2);
     }
