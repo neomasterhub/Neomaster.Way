@@ -87,6 +87,7 @@
 4. [Throwing a task exception][tasks-4]
 5. [`Handle()`][tasks-5]
 6. [`Handle()` throws an aggregate of unhandled exceptions][tasks-6]
+7. [`Result`][tasks-7]
 
 [tasks-1]:.Net/Research/Tasks/TaskCreateUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskWaitUnitDemo.cs
@@ -94,6 +95,7 @@
 [tasks-4]:.Net/Research/Tasks/TaskExceptionThrowingUnitDemo.cs
 [tasks-5]:.Net/Research/Tasks/TaskExceptionHandleUnitDemo.cs
 [tasks-6]:.Net/Research/Tasks/TaskExceptionUnhandledAggregate.cs
+[tasks-7]:.Net/Research/Tasks/TaskResultUnitDemo.cs
 
 ### Console
 
