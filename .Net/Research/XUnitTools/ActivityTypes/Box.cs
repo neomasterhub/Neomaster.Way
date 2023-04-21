@@ -8,6 +8,6 @@ internal class Box
         Size = size;
     }
 
-    public string Color { get; set; }
-    public int Size { get; set; }
+    public string Color { get; }
+    public int Size { get; }
 }
