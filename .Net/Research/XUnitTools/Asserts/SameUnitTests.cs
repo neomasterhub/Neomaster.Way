@@ -13,4 +13,15 @@ public class SameUnitTests
 
         Assert.NotSame(o1, o2);
     }
+
+    [Fact]
+    public void Strings()
+    {
+        var s1 = "test";
+        var s2 = "test";
+        var s3 = new string(s1);
+
+        Assert.Same(s1, s2);
+        Assert.NotSame(s1, s3);
+    }
 }

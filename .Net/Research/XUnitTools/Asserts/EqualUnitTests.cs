@@ -42,4 +42,21 @@ public class EqualUnitTests
 
         Assert.Equal(s1, s2);
     }
+
+    [Fact]
+    public void Strings()
+    {
+        var s1 = "my test\n";
+        var s2 = "my test\n";
+        var s3 = new string(s1);
+        var s4 = "MY TEST\n";
+        var s5 = "my test\r\n";
+        var s6 = "my\ttest\n";
+
+        Assert.Equal(s1, s2);
+        Assert.Equal(s1, s3);
+        Assert.Equal(s1, s4, ignoreCase: true);
+        Assert.Equal(s1, s5, ignoreLineEndingDifferences: true);
+        Assert.Equal(s1, s6, ignoreWhiteSpaceDifferences: true);
+    }
 }
