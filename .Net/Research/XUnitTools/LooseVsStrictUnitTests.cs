@@ -4,7 +4,7 @@ using XUnitTools.ActivityTypes;
 
 namespace XUnitTools;
 
-public class LooseVsStrictMockUnitTests
+public class LooseVsStrictUnitTests
 {
     [Fact]
     public void Loose()

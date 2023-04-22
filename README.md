@@ -105,7 +105,7 @@
 
 [tests-1]:.Net/Research/XUnitTools/Asserts/SameUnitTests.cs
 [tests-2]:.Net/Research/XUnitTools/Asserts/EqualUnitTests.cs
-[tests-101]:.Net/Research/XUnitTools/LooseVsStrictMockUnitTests.cs
+[tests-101]:.Net/Research/XUnitTools/LooseVsStrictUnitTests.cs
 [tests-102]:.Net/Research/XUnitTools/AutoMockUnitTests.cs
 
 ---
