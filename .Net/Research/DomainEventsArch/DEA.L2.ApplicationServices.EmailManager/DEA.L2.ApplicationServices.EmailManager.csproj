@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DEA.L1.Domain.Model\DEA.L1.Domain.Model.csproj" />
+	</ItemGroup>
+
+	<Import Project="$(SolutionDir).Net\Tools\StyleCop\StyleCop.props" />
+
+</Project>
