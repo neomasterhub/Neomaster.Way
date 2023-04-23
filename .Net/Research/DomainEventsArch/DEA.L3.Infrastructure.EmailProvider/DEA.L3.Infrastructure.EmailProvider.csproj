@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DEA.L0.PlatformExtension\DEA.L0.PlatformExtension.csproj" />
+		<ProjectReference Include="..\DEA.L1.Domain.Model\DEA.L1.Domain.Model.csproj" />
+		<ProjectReference Include="..\DEA.L2.ApplicationServices.EmailManager\DEA.L2.ApplicationServices.EmailManager.csproj" />
+	</ItemGroup>
+
+	<Import Project="$(SolutionDir).Net\Tools\StyleCop\StyleCop.props" />
+
+</Project>
