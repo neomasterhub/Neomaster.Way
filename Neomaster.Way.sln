@@ -86,6 +86,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEA.L2.ApplicationServices.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEA.L2.ApplicationServices.UserManager", ".Net\Research\DomainEventsArch\DEA.L2.ApplicationServices.UserManager\DEA.L2.ApplicationServices.UserManager.csproj", "{371D2503-9535-45E9-8D5D-981378FA184D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEA.L3.Infrastructure.DAL", ".Net\Research\DomainEventsArch\DEA.L3.Infrastructure.DAL\DEA.L3.Infrastructure.DAL.csproj", "{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,12 @@ Global
 		{371D2503-9535-45E9-8D5D-981378FA184D}.Demo|Any CPU.Build.0 = Debug|Any CPU
 		{371D2503-9535-45E9-8D5D-981378FA184D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{371D2503-9535-45E9-8D5D-981378FA184D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -272,6 +280,7 @@ Global
 		{3D06E91E-6210-4333-8725-7B47AB19F0A6} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
 		{77692C31-3495-4AB8-9C36-E503A238F4EB} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
 		{371D2503-9535-45E9-8D5D-981378FA184D} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
+		{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
