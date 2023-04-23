@@ -9,7 +9,7 @@ public class AnyEventHandler<T> : INotificationHandler<T>
 {
     public Task Handle(T e, CancellationToken cancellationToken)
     {
-        Logger.WriteLineObjectDescription("Audit event:", e);
+        Logger.WriteLineObjectDescription("Audit event", e);
 
         return Task.CompletedTask;
     }

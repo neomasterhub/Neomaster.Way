@@ -15,7 +15,7 @@ internal class DBContext
 
     public void SaveChanges(Observable entity)
     {
-        Logger.WriteLineObjectDescription("Entity saved:", entity);
+        Logger.WriteLineObjectDescription("Entity save event", entity);
 
         foreach (var e in entity.ReadEvents())
         {

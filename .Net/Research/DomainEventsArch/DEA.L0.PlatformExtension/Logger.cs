@@ -8,8 +8,8 @@ public static class Logger
     {
         var objTypeName = obj.GetType().Name;
 
-        Console.WriteLine(description);
-        Console.Write($"<{objTypeName}>");
+        Console.WriteLine($"[ {description} ]");
+        Console.Write($"\"{objTypeName}\": ");
         Console.WriteLine(JsonSerializer.Serialize(obj, new JsonSerializerOptions { WriteIndented = true }));
         Console.WriteLine();
     }
