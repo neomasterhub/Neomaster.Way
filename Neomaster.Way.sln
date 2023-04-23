@@ -80,6 +80,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEA.L0.PlatformExtension", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEA.L1.Domain.Model", ".Net\Research\DomainEventsArch\DEA.L1.Domain.Model\DEA.L1.Domain.Model.csproj", "{B89B5A44-0A7E-459C-8EDE-AD9031AA333C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEA.L2.ApplicationServices.Audit", ".Net\Research\DomainEventsArch\DEA.L2.ApplicationServices.Audit\DEA.L2.ApplicationServices.Audit.csproj", "{3D06E91E-6210-4333-8725-7B47AB19F0A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,12 @@ Global
 		{B89B5A44-0A7E-459C-8EDE-AD9031AA333C}.Demo|Any CPU.Build.0 = Debug|Any CPU
 		{B89B5A44-0A7E-459C-8EDE-AD9031AA333C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B89B5A44-0A7E-459C-8EDE-AD9031AA333C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D06E91E-6210-4333-8725-7B47AB19F0A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D06E91E-6210-4333-8725-7B47AB19F0A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D06E91E-6210-4333-8725-7B47AB19F0A6}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D06E91E-6210-4333-8725-7B47AB19F0A6}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{3D06E91E-6210-4333-8725-7B47AB19F0A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D06E91E-6210-4333-8725-7B47AB19F0A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -245,6 +253,7 @@ Global
 		{FD08ACCE-2151-409F-A7EE-EAA72039A850} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{F67A9BC7-BF5B-4955-9F87-4230EB465EA4} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
 		{B89B5A44-0A7E-459C-8EDE-AD9031AA333C} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
+		{3D06E91E-6210-4333-8725-7B47AB19F0A6} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
