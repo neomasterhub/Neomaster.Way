@@ -89,6 +89,7 @@
 6. [`Handle()`][tasks-6]
 7. [`Handle()` throws an aggregate of unhandled exceptions][tasks-7]
 8. [`Result`][tasks-8]
+9. [`Delay()`][tasks-9] 
 
 [tasks-1]:.Net/Research/Tasks/TaskCreateUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskExecutingOnThreadPoolThreadUnitDemo.cs
@@ -98,6 +99,7 @@
 [tasks-6]:.Net/Research/Tasks/TaskExceptionHandleUnitDemo.cs
 [tasks-7]:.Net/Research/Tasks/TaskExceptionUnhandledAggregateUnitDemo.cs
 [tasks-8]:.Net/Research/Tasks/TaskResultUnitDemo.cs
+[tasks-9]:.Net/Research/Tasks/TaskDelayUnitDemo.cs
 
 ### xUnitTest Tools
 1. [`Assert.Same()`][tests-1]
