@@ -6,8 +6,7 @@ namespace Tasks;
 
 public class AsyncAwaitUnitDemo : UnitDemoBase
 {
-    private static string _resource = string.Empty;
-    private static Action _endlessDotWriter = () =>
+    private static readonly Action _endlessDotWriter = () =>
     {
         while (true)
         {
@@ -15,6 +14,7 @@ public class AsyncAwaitUnitDemo : UnitDemoBase
             _resource += '.';
         }
     };
+    private static string _resource = string.Empty;
 
     public AsyncAwaitUnitDemo(ITestOutputHelper output)
         : base(output)

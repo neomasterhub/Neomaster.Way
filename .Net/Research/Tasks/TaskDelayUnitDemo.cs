@@ -6,8 +6,7 @@ namespace Tasks;
 
 public class TaskDelayUnitDemo : UnitDemoBase
 {
-    private static string _resource = string.Empty;
-    private static Action _endlessDotWriter = () =>
+    private static readonly Action _endlessDotWriter = () =>
     {
         while (true)
         {
@@ -15,12 +14,13 @@ public class TaskDelayUnitDemo : UnitDemoBase
             _resource += '.';
         }
     };
-    private static Action _endlessIdle = () =>
+    private static readonly Action _endlessIdle = () =>
     {
         while (true)
         {
         }
     };
+    private static string _resource = string.Empty;
 
     public TaskDelayUnitDemo(ITestOutputHelper output)
         : base(output)
