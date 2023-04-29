@@ -91,6 +91,9 @@
 8. [`Result`][tasks-8]
 9. [`Delay()`][tasks-9]
 10. [`async`-`await`][tasks-10]
+11. [Parallel tasks][tasks-11]
+12. [Parallel voids][tasks-12]
+13. [Async task vs async void][tasks-13]
 
 [tasks-1]:.Net/Research/Tasks/TaskCreateUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskExecutingOnThreadPoolThreadUnitDemo.cs
@@ -102,6 +105,9 @@
 [tasks-8]:.Net/Research/Tasks/TaskResultUnitDemo.cs
 [tasks-9]:.Net/Research/Tasks/TaskDelayUnitDemo.cs
 [tasks-10]:.Net/Research/Tasks/AsyncAwaitUnitDemo.cs
+[tasks-11]:.Net/Research/Tasks/AsyncParallelTasksUnitDemo.cs
+[tasks-12]:.Net/Research/Tasks/AsyncParallelVoidsUnitDemo.cs
+[tasks-13]:.Net/Research/Tasks/AsyncTaskVsVoidExceptionUnitDemo.cs
 
 ### xUnitTest Tools
 1. [`Assert.Same()`][tests-1]
