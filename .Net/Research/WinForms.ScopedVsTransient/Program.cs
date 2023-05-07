@@ -7,7 +7,7 @@ internal static class Program
 {
     private static IServiceProvider _serviceProvider;
 
-    public static IServiceProvider ScopeServiceProvider => _serviceProvider.CreateScope().ServiceProvider;
+    public static IServiceProvider NextScopeServiceProvider => _serviceProvider.CreateScope().ServiceProvider;
 
     [STAThread]
     private static void Main()
