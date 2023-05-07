@@ -5,7 +5,9 @@ namespace WinForms.ScopedVsTransient;
 
 internal static class Program
 {
-    public static IServiceProvider ServiceProvider { get; private set; }
+    private static IServiceProvider _serviceProvider;
+
+    public static IServiceProvider ScopeServiceProvider => _serviceProvider.CreateScope().ServiceProvider;
 
     [STAThread]
     private static void Main()
@@ -25,7 +27,7 @@ internal static class Program
                 .AddTransient<Client>())
             .Build();
 
-        ServiceProvider = host.Services;
+        _serviceProvider = host.Services;
 
         Application.Run(host.Services.GetRequiredService<Form1>());
     }
