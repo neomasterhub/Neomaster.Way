@@ -145,3 +145,13 @@
 `Ctrl + Shift + F`
 
 File types: `!*\bin\*;!*\obj\*;`
+
+### Configurations
+
+|Configuration|Additional files|
+|||
+|Debug|`**\*UnitTests.cs`|
+|Demo|`**\*UnitDemo.cs`|
+
+> :warning: **If the files were not rendered after opening the project in VS**:  
+> try selecting Release and then selecting Demo or Debug again.
