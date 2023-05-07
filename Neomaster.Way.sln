@@ -21,7 +21,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{58534930-A082-42EC-9C3B-A0C8060C8E4B}"
 	ProjectSection(SolutionItems) = preProject
 		Docs\Connections.md = Docs\Connections.md
-		Docs\logo.png = Docs\logo.png
 		Docs\Shortcuts.md = Docs\Shortcuts.md
 	EndProjectSection
 EndProject
@@ -95,6 +94,16 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console.ScopedVsTransient", ".Net\Research\Console.ScopedVsTransient\Console.ScopedVsTransient.csproj", "{7FECF51E-5888-4283-94E8-0DC1AE406090}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms.ScopedVsTransient", ".Net\Research\WinForms.ScopedVsTransient\WinForms.ScopedVsTransient.csproj", "{7427551E-30E6-4C0C-AAF6-46A4338DA8C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{1E29330B-4CEE-4BC1-BDDE-7015A6945BAB}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\img\logo.png = Docs\img\logo.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demos", "demos", "{45FF392E-D377-4B22-A5DA-B41E92B66EB1}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\img\demos\WinForms.ScopedVsTransient.png = Docs\img\demos\WinForms.ScopedVsTransient.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -317,6 +326,8 @@ Global
 		{66030F72-E4B9-4E35-A0B1-A2579DB86113} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
 		{7FECF51E-5888-4283-94E8-0DC1AE406090} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 		{7427551E-30E6-4C0C-AAF6-46A4338DA8C4} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
+		{1E29330B-4CEE-4BC1-BDDE-7015A6945BAB} = {58534930-A082-42EC-9C3B-A0C8060C8E4B}
+		{45FF392E-D377-4B22-A5DA-B41E92B66EB1} = {1E29330B-4CEE-4BC1-BDDE-7015A6945BAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
