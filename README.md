@@ -131,6 +131,8 @@
 1. [Host][win-forms-1]
 2. [Scoped vs transient][win-forms-2]
 
+![WinForms/Scoped vs transient]("Docs/x.png" "Scoped vs transient")
+
 [win-forms-1]:.Net/Research/WinForms.Host/Program.cs
 [win-forms-2]:.Net/Research/WinForms.ScopedVsTransient/Program.cs
 
