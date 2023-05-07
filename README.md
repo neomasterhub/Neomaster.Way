@@ -120,6 +120,13 @@
 [tests-101]:.Net/Research/XUnitTools/LooseVsStrictUnitTests.cs
 [tests-102]:.Net/Research/XUnitTools/AutoMockUnitTests.cs
 
+### Console
+1. [Host][console-1]
+2. [Scoped vs transient][console-2]
+
+[console-1]:.Net/Research/Console.Host
+[console-2]:.Net/Research/Console.ScopedVsTransient
+
 ---
 
 ## Notes <a name="notes"></a>
