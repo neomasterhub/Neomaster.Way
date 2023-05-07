@@ -149,7 +149,7 @@ File types: `!*\bin\*;!*\obj\*;`
 ### Configurations
 
 |Configuration|Additional files|
-|||
+|-|-|
 |Debug|`**\*UnitTests.cs`|
 |Demo|`**\*UnitDemo.cs`|
 
