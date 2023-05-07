@@ -14,7 +14,12 @@ internal static class Program
 
         var host = Host.CreateDefaultBuilder()
             .ConfigureServices((hostContext, services) => services
-                .AddScoped<Form1>()
+
+                // Forms
+                .AddSingleton<Form1>()
+                .AddTransient<ClientForm>()
+
+                // Services
                 .AddScoped<IScopedService, Service>()
                 .AddTransient<ITransientService, Service>()
                 .AddTransient<Client>())
