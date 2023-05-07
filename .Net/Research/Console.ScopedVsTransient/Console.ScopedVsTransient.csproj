@@ -9,4 +9,8 @@
 
 	<Import Project="$(SolutionDir).Net\Tools\StyleCop\StyleCop.props" />
 
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+	</ItemGroup>
+
 </Project>
