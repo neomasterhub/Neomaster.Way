@@ -8,12 +8,15 @@ services.AddTransient<Client>();
 
 var serviceProvider = services.BuildServiceProvider();
 
-for (var i = 0; i < 3; i++)
+for (var i = 1; i <= 3; i++)
 {
+    Console.WriteLine($"SCOPE {i}\n");
+
     var scope = serviceProvider.CreateScope();
 
     var client1 = scope.ServiceProvider.GetRequiredService<Client>();
     var client2 = scope.ServiceProvider.GetRequiredService<Client>();
 
-    Console.WriteLine(client.GetServicesInfo());
+    client1.PrintServicesInfo();
+    client2.PrintServicesInfo();
 }
