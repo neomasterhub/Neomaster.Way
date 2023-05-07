@@ -2,6 +2,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace WinForms.ScopedVsTransient;
 
+/// <summary>
+/// Main form.
+/// </summary>
 internal partial class Form1 : Form
 {
     public Form1()
@@ -9,10 +12,13 @@ internal partial class Form1 : Form
         InitializeComponent();
     }
 
-    private void button1_Click(object sender, EventArgs e)
+    private void OpenScopedForms(object sender, EventArgs e)
     {
-        var clientForm = Program.ServiceProvider.GetRequiredService<ClientForm>();
+        var scope = Program.NextScopeServiceProvider;
+        var clientForm1 = scope.GetRequiredService<ClientForm>();
+        var clientForm2 = scope.GetRequiredService<ClientForm>();
 
-        clientForm.Show();
+        clientForm1.Show();
+        clientForm2.Show();
     }
 }
