@@ -39,9 +39,9 @@ internal class Client
         _transient = transient;
     }
 
-    public void PrintServicesInfo(Label label)
+    public void PrintServicesInfo(Label scoped, Label transient)
     {
-        label.Text += $"Scoped    : {_scoped.GetInfo()}\n";
-        label.Text += $"Transient : {_transient.GetInfo()}";
+        scoped.Text = $"Scoped : {_scoped.GetInfo()}";
+        transient.Text = $"Transient : {_transient.GetInfo()}";
     }
 }
