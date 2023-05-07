@@ -92,6 +92,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEA.L3.Infrastructure.Email
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEA.L4.Application.ConsoleApp", ".Net\Research\DomainEventsArch\DEA.L4.Application.ConsoleApp\DEA.L4.Application.ConsoleApp.csproj", "{66030F72-E4B9-4E35-A0B1-A2579DB86113}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.ScopedVsTransient", ".Net\Research\Console.ScopedVsTransient\Console.ScopedVsTransient.csproj", "{650A7B84-EBD5-44DA-A221-171180BE3C65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,12 @@ Global
 		{66030F72-E4B9-4E35-A0B1-A2579DB86113}.Demo|Any CPU.Build.0 = Debug|Any CPU
 		{66030F72-E4B9-4E35-A0B1-A2579DB86113}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66030F72-E4B9-4E35-A0B1-A2579DB86113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{650A7B84-EBD5-44DA-A221-171180BE3C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650A7B84-EBD5-44DA-A221-171180BE3C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650A7B84-EBD5-44DA-A221-171180BE3C65}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{650A7B84-EBD5-44DA-A221-171180BE3C65}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{650A7B84-EBD5-44DA-A221-171180BE3C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650A7B84-EBD5-44DA-A221-171180BE3C65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -299,6 +307,7 @@ Global
 		{FAC3663C-9011-4646-BBC4-8B19BBB3E3A3} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
 		{EF05BA5C-7DC9-43CE-B0A2-F7C7FDB2301C} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
 		{66030F72-E4B9-4E35-A0B1-A2579DB86113} = {FD08ACCE-2151-409F-A7EE-EAA72039A850}
+		{650A7B84-EBD5-44DA-A221-171180BE3C65} = {3DB4176B-B73A-4451-AFEC-9C9B66C7B30E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84EB52E-FEA7-47C5-BBB2-D25EA66286AC}
