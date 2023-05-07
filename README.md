@@ -127,6 +127,13 @@
 [tests-101]:.Net/Research/XUnitTools/LooseVsStrictUnitTests.cs
 [tests-102]:.Net/Research/XUnitTools/AutoMockUnitTests.cs
 
+### WinForms
+1. [Host][win-forms-1]
+2. [Scoped vs transient][win-forms-2]
+
+[win-forms-1]:.Net/Research/WinForms.Host/Program.cs
+[win-forms-2]:.Net/Research/WinForms.ScopedVsTransient/Program.cs
+
 ---
 
 ## Notes <a name="notes"></a>
