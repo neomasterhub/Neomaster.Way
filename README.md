@@ -124,8 +124,8 @@
 1. [Host][console-1]
 2. [Scoped vs transient][console-2]
 
-[console-1]:.Net/Research/Console.Host
-[console-2]:.Net/Research/Console.ScopedVsTransient
+[console-1]:.Net/Research/Console.Host/Program.cs
+[console-2]:.Net/Research/Console.ScopedVsTransient/Program.cs
 
 ---
 
