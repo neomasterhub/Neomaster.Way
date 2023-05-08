@@ -148,9 +148,11 @@
 ### Redis (StackExchange) <a name="redis-se"></a>
 1. [Connection exception][redis-se-1]
 2. [Connection instance][redis-se-2]
+3. [Set/get value][redis-se-3]
 
 [redis-se-1]:.Net/Research/RedisSE/ConnectionExceptionUnitDemo.cs
 [redis-se-2]:.Net/Research/RedisSE/ConnectionInstanceUnitDemo.cs
+[redis-se-3]:.Net/Research/RedisSE/SetGetUnitDemo.cs
 
 ---
 
