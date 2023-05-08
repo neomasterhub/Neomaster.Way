@@ -5,14 +5,22 @@
 
 ## Research <a name="research"></a>
 
-### Console
+* [*Console*](#console)
+* [*Threads*](#threads)
+* [*Threads.Sync*](#threads.sync)
+* [*Threads.Pool*](#threads.pool)
+* [*Tasks*](#tasks)
+* [*xUnitTest Tools*](#tests)
+* [*WinForms*](#win-forms)
+
+### Console <a name="console"></a>
 1. [Host][console-1]
 2. [Scoped vs transient][console-2]
 
 [console-1]:.Net/Research/Console.Host/Program.cs
 [console-2]:.Net/Research/Console.ScopedVsTransient/Program.cs
 
-### Threads
+### Threads <a name="threads"></a>
 1. [Creation, Start, Parallel writing][threads-1]
 2. [Background][threads-2]
 3. [Foreground][threads-3]
@@ -43,7 +51,7 @@
 [threads-13]:.Net/Research/Threads.SuspendResume/Program.cs
 [threads-13.1]:.Net/Research/Threads.SuspendResume.TickTock/Program.cs
 
-### Threads.Sync
+### Threads.Sync <a name="threads.sync"></a>
 1. [`lock`][threads.sync-1]
 2. `Monitor`
     - [`Enter()`, `Exit()`, Sequential writing to a single resource][threads.sync-2.1]
@@ -64,7 +72,7 @@
 [threads.sync-2.6]:.Net/Research/Threads.Sync/Monitors/PulseWaitTickTockWithNoiseUnitDemo.cs
 [threads.sync-3.1]:.Net/Research/Threads.Sync/MethodAttributes/SynchronizedUnitDemo.cs
 
-### Threads.Pool
+### Threads.Pool <a name="threads.pool"></a>
 1. [Background][threads.pool-1]
 2. [Try set foreground][threads.pool-2]
 3. [`Cancel()`, Cancellation of an infinite asynchronous loop][threads.pool-3]
@@ -87,7 +95,7 @@
 [threads.pool-9]:.Net/Research/Threads.Pool/ThreadContextUnitDemo.cs
 [threads.pool-10]:.Net/Research/Threads.Pool/ThreadContextFlowUnitDemo.cs
 
-### Tasks
+### Tasks <a name="tasks"></a>
 1. [Create][tasks-1]
 2. [Executing on a thread pool thread][tasks-2]
 3. [`Wait()`][tasks-3]
@@ -116,7 +124,7 @@
 [tasks-12]:.Net/Research/Tasks/AsyncParallelVoidsUnitDemo.cs
 [tasks-13]:.Net/Research/Tasks/AsyncTaskVsVoidExceptionUnitDemo.cs
 
-### xUnitTest Tools
+### xUnitTest Tools <a name="tests"></a>
 1. [`Assert.Same()`][tests-1]
 2. [`Assert.Equal()`][tests-2]
 101. [`MockBehavior.Loose` vs `MockBehavior.Strict`][tests-101]
@@ -127,7 +135,7 @@
 [tests-101]:.Net/Research/XUnitTools/LooseVsStrictUnitTests.cs
 [tests-102]:.Net/Research/XUnitTools/AutoMockUnitTests.cs
 
-### WinForms
+### WinForms <a name="win-forms"></a>
 1. [Host][win-forms-1]
 2. [Scoped vs transient][win-forms-2]
 
