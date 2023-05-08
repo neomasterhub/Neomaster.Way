@@ -149,10 +149,12 @@
 1. [Connection exception][redis-se-1]
 2. [Connection instance][redis-se-2]
 3. [Set/get value][redis-se-3]
+4. [Fire and forget][redis-se-4]
 
 [redis-se-1]:.Net/Research/RedisSE/ConnectionExceptionUnitDemo.cs
 [redis-se-2]:.Net/Research/RedisSE/ConnectionInstanceUnitDemo.cs
 [redis-se-3]:.Net/Research/RedisSE/SetGetUnitDemo.cs
+[redis-se-4]:.Net/Research/RedisSE/FireAndForgetUnitDemo.cs
 
 ---
 
