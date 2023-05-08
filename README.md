@@ -11,7 +11,8 @@
 * [*Threads.Pool*](#threads.pool)
 * [*Tasks*](#tasks)
 * [*xUnitTest Tools*](#tests)
-* [*WinForms*](#win-forms)
+* [*WinForms*](#win-forms)  
+* [*Redis (StackExchange)*](#redis-se)
 
 ### Console <a name="console"></a>
 1. [Host][console-1]
@@ -143,6 +144,13 @@
 
 [win-forms-1]:.Net/Research/WinForms.Host/Program.cs
 [win-forms-2]:.Net/Research/WinForms.ScopedVsTransient/Program.cs
+
+### Redis (StackExchange) <a name="redis-se"></a>
+1. [Connection exception][redis-se-1]
+2. [Connection instance][redis-se-2]
+
+[redis-se-1]:.Net/Research/RedisSE/ConnectionExceptionUnitDemo.cs
+[redis-se-2]:.Net/Research/RedisSE/ConnectionInstanceUnitDemo.cs
 
 ---
 
