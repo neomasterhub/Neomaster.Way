@@ -6,9 +6,9 @@ using Xunit.Abstractions;
 
 namespace RedisSE;
 
-public class ConnectionUnitDemo : UnitDemoBase
+public class ConnectionInstanceUnitDemo : UnitDemoBase
 {
-    public ConnectionUnitDemo(ITestOutputHelper output)
+    public ConnectionInstanceUnitDemo(ITestOutputHelper output)
         : base(output)
     {
     }
