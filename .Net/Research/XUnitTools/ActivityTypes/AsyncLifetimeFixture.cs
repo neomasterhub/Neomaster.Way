@@ -6,7 +6,7 @@ public class AsyncLifetimeFixture : IAsyncLifetime
 {
     private static readonly List<int> _arr = new();
 
-    public int Count => _arr.Count;
+    public IReadOnlyCollection<int> Arr => _arr;
 
     public async Task DisposeAsync()
     {
