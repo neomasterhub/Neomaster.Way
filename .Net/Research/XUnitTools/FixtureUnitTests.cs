@@ -13,11 +13,11 @@ public class FixtureUnitTests : IClassFixture<AsyncLifetimeFixture>
     }
 
     [Fact]
-    public void Test1() => Assert.Equal(1, _fixture.Count);
+    public void Test1() => Assert.Single(_fixture.Arr);
 
     [Fact]
-    public void Test2() => Assert.Equal(1, _fixture.Count);
+    public void Test2() => Assert.Single(_fixture.Arr);
 
     [Fact]
-    public void Test3() => Assert.Equal(1, _fixture.Count);
+    public void Test3() => Assert.Single(_fixture.Arr);
 }
