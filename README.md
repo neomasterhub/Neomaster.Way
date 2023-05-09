@@ -132,7 +132,7 @@
 102. [`AutoMock`][tests-102]
 201. [`IAsyncLifetime`][tests-201]
 202. [`IClassFixture<>`][tests-202]
-203. [`Tests: IDisposable`][tests-203]
+203. [`Tests : IDisposable`][tests-203]
 
 [tests-1]:.Net/Research/XUnitTools/Asserts/SameUnitTests.cs
 [tests-2]:.Net/Research/XUnitTools/Asserts/EqualUnitTests.cs
