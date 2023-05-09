@@ -2,7 +2,7 @@
 
 namespace XUnitTools.ActivityTypes;
 
-internal class AsyncLifetimeTestContext : IAsyncLifetime
+public class AsyncLifetimeTestContext : IAsyncLifetime
 {
     private readonly List<int> _arr = new();
 
