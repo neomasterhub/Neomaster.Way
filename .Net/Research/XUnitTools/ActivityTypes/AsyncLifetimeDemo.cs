@@ -2,11 +2,11 @@
 
 namespace XUnitTools.ActivityTypes;
 
-public class AsyncLifetimeTestContext : IAsyncLifetime
+public class AsyncLifetimeDemo : IAsyncLifetime
 {
-    private readonly List<int> _arr = new();
+    private static readonly List<int> _arr = new();
 
-    public int Count => _arr.Count;
+    public static int Count => _arr.Count;
 
     public async Task DisposeAsync()
     {
