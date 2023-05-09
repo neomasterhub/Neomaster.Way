@@ -6,6 +6,8 @@ public class AsyncLifetimeTestContext : IAsyncLifetime
 {
     private readonly List<int> _arr = new();
 
+    public int Count => _arr.Count;
+
     public async Task DisposeAsync()
     {
         await Task.Run(() => _arr.Clear());
