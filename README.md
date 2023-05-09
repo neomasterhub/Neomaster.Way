@@ -130,11 +130,15 @@
 2. [`Assert.Equal()`][tests-2]
 101. [`MockBehavior.Loose` vs `MockBehavior.Strict`][tests-101]
 102. [`AutoMock`][tests-102]
+201. [`IAsyncLifetime`][tests-201]
+202. [`IClassFixture<>`][tests-202]
 
 [tests-1]:.Net/Research/XUnitTools/Asserts/SameUnitTests.cs
 [tests-2]:.Net/Research/XUnitTools/Asserts/EqualUnitTests.cs
 [tests-101]:.Net/Research/XUnitTools/LooseVsStrictUnitTests.cs
 [tests-102]:.Net/Research/XUnitTools/AutoMockUnitTests.cs
+[tests-201]:.Net/Research/XUnitTools/ActivityTypes/AsyncLifetimeFixture.cs
+[tests-202]:.Net/Research/XUnitTools/FixtureUnitTests.cs
 
 ### WinForms <a name="win-forms"></a>
 1. [Host][win-forms-1]
