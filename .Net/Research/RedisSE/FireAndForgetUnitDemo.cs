@@ -18,8 +18,8 @@ public class FireAndForgetUnitDemo : UnitDemoBase
         var redis = ConnectionMultiplexer.Connect("localhost");
         var db = redis.GetDatabase();
 
-        var a = db.StringSet("a", "A");
-        var b = db.StringSet("b", "B", flags: CommandFlags.FireAndForget);
+        var a = db.StringSet("a", "A", TimeSpan.FromSeconds(2));
+        var b = db.StringSet("b", "B", TimeSpan.FromSeconds(2), flags: CommandFlags.FireAndForget);
 
         Output.WriteLine($"a was set: {a}");
         Output.WriteLine($"b was set: {b}");
