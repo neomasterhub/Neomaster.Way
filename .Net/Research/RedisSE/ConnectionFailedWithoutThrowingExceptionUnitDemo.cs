@@ -33,6 +33,6 @@ public class ConnectionFailedWithoutThrowingExceptionUnitDemo : UnitDemoBase
         }
 
         // Output:
-        // no exception
+        // is connected: False
     }
 }
