@@ -23,9 +23,9 @@ public class ConnectionFailedWithoutThrowingExceptionUnitDemo : UnitDemoBase
 
         try
         {
-            getConnection.Invoke();
+            var connection = getConnection.Invoke();
 
-            Output.WriteLine("no exception");
+            Output.WriteLine($"is connected: {connection.IsConnected}");
         }
         catch
         {
