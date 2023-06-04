@@ -12,6 +12,9 @@ public class SetGetUnitDemo : UnitDemoBase
     {
     }
 
+    /// <summary>
+    /// Requires Redis to be running.
+    /// </summary>
     [Fact]
     public void Demo()
     {
