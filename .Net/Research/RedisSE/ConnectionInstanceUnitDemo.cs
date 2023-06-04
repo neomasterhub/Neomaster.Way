@@ -13,6 +13,9 @@ public class ConnectionInstanceUnitDemo : UnitDemoBase
     {
     }
 
+    /// <summary>
+    /// Requires Redis to be running.
+    /// </summary>
     [Fact]
     public void Demo()
     {
