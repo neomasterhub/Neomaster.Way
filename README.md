@@ -110,6 +110,7 @@
 11. [Parallel tasks][tasks-11]
 12. [Parallel voids][tasks-12]
 13. [Async task vs async void][tasks-13]
+14. [Try-catch with await][tasks-14]
 
 [tasks-1]:.Net/Research/Tasks/TaskCreateUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskExecutingOnThreadPoolThreadUnitDemo.cs
@@ -124,6 +125,7 @@
 [tasks-11]:.Net/Research/Tasks/AsyncParallelTasksUnitDemo.cs
 [tasks-12]:.Net/Research/Tasks/AsyncParallelVoidsUnitDemo.cs
 [tasks-13]:.Net/Research/Tasks/AsyncTaskVsVoidExceptionUnitDemo.cs
+[tasks-14]:.Net/Research/Tasks/AsyncAwaitInTryCatchUnitDemo.cs
 
 ### xUnitTest Tools <a name="tests"></a>
 1. [`Assert.Same()`][tests-1]
