@@ -166,7 +166,7 @@
 
 ---
 
-## Notes <a name="notes"></a>
+## Notes for Visual Studio <a name="notes"></a>
 
 ### Find and Replace
 
