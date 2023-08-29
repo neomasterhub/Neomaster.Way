@@ -112,6 +112,7 @@
 13. [Async task vs async void][tasks-13]
 14. [Try-catch with await][tasks-14]
 15. [`lock` within task][tasks-15]
+16. [`SemaphoreSlim` within task (`lock` with async-await)][tasks-16]
 
 [tasks-1]:.Net/Research/Tasks/TaskCreateUnitDemo.cs
 [tasks-2]:.Net/Research/Tasks/TaskExecutingOnThreadPoolThreadUnitDemo.cs
@@ -128,6 +129,7 @@
 [tasks-13]:.Net/Research/Tasks/AsyncTaskVsVoidExceptionUnitDemo.cs
 [tasks-14]:.Net/Research/Tasks/AsyncAwaitInTryCatchUnitDemo.cs
 [tasks-15]:.Net/Research/Tasks/AsyncAwaitLockUnitDemo.cs
+[tasks-16]:.Net/Research/Tasks/AsyncAwaitSemaphoreSlimUnitDemo.cs
 
 ### xUnitTest Tools <a name="tests"></a>
 1. [`Assert.Same()`][tests-1]
