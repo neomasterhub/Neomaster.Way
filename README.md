@@ -140,6 +140,7 @@
 202. [`IClassFixture<>`][tests-202]
 203. [`Tests : IDisposable`][tests-203]
 301. [`It.IsAny()`][tests-301]
+302. [`It.IsNotNull()`][tests-302]
 
 [tests-1]:.Net/Research/XUnitTools/Asserts/SameUnitTests.cs
 [tests-2]:.Net/Research/XUnitTools/Asserts/EqualUnitTests.cs
@@ -149,6 +150,7 @@
 [tests-202]:.Net/Research/XUnitTools/FixtureUnitTests.cs
 [tests-203]:.Net/Research/XUnitTools/DisposableTestingUnitTests.cs
 [tests-301]:.Net/Research/XUnitTools/ItMethods/IsAnyUnitTests.cs
+[tests-302]:.Net/Research/XUnitTools/ItMethods/IsNotNullUnitTests.cs
 
 ### WinForms <a name="win-forms"></a>
 1. [Host][win-forms-1]
