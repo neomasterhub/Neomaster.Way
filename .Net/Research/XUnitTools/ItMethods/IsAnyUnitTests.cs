@@ -18,7 +18,6 @@ public class IsAnyUnitTests : ItUnitTestBase
 
         Sut.Get2(arg);
 
-        // 2 checks that the callback has been called:
         Assert.True(anyArgHasBeenPassedToService1);
         Mock.Verify(m => m.Get1(It.IsAny<int?>()), Times.Once);
     }
