@@ -6,14 +6,12 @@ namespace Tasks;
 
 public class AsyncTaskVsVoidExceptionUnitDemo : UnitDemoBase
 {
+    private static bool _asyncTaskAfterSignal;
+    private static bool _asyncVoidAfterSignal;
+
     public AsyncTaskVsVoidExceptionUnitDemo(ITestOutputHelper output)
         : base(output)
     {
-    }
-
-    private static async void AsyncVoid()
-    {
-        await Task.Run(() => throw new ArithmeticException());
     }
 
     private static async Task AsyncTask()
@@ -21,12 +19,18 @@ public class AsyncTaskVsVoidExceptionUnitDemo : UnitDemoBase
         await Task.Run(() => throw new ArithmeticException());
     }
 
+    private static async void AsyncVoid()
+    {
+        await Task.Run(() => throw new ArithmeticException());
+    }
+
     [Fact(DisplayName = "Should be failed")]
-    public void Demo()
+    public async Task Demo()
     {
         try
         {
-            _ = AsyncTask();
+            await AsyncTask();
+            _asyncTaskAfterSignal = true;
         }
         catch (ArithmeticException)
         {
@@ -36,14 +40,21 @@ public class AsyncTaskVsVoidExceptionUnitDemo : UnitDemoBase
         try
         {
             AsyncVoid();
+            _asyncVoidAfterSignal = true;
         }
         catch (ArithmeticException)
         {
             Output.WriteLine("void ex");
         }
 
+        Thread.Sleep(1000);
+
+        Output.WriteLine($"{nameof(_asyncTaskAfterSignal)}: {_asyncTaskAfterSignal}");
+        Output.WriteLine($"{nameof(_asyncVoidAfterSignal)}: {_asyncVoidAfterSignal}");
+
         // Output:
-        // System.ArithmeticException : Overflow or underflow in the arithmetic operation.
-        // ... line 16
+        // task ex
+        // _asyncTaskAfterSignal: False
+        // _asyncVoidAfterSignal: True
     }
 }
