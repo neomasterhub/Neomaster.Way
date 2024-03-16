@@ -134,6 +134,7 @@
 ### xUnitTest Tools <a name="tests"></a>
 1. [`Assert.Same()`][tests-1]
 2. [`Assert.Equal()`][tests-2]
+10. [Tests class template][tests-10]
 101. [`MockBehavior.Loose` vs `MockBehavior.Strict`][tests-101]
 102. [`AutoMock`][tests-102]
 201. [`IAsyncLifetime`][tests-201]
@@ -145,6 +146,7 @@
 
 [tests-1]:.Net/Research/XUnitTools/Asserts/SameUnitTests.cs
 [tests-2]:.Net/Research/XUnitTools/Asserts/EqualUnitTests.cs
+[tests-10]:.Net/Research/XUnitTools/UnitTestsTemplate.cs
 [tests-101]:.Net/Research/XUnitTools/LooseVsStrictUnitTests.cs
 [tests-102]:.Net/Research/XUnitTools/AutoMockUnitTests.cs
 [tests-201]:.Net/Research/XUnitTools/ActivityTypes/AsyncLifetimeFixture.cs
