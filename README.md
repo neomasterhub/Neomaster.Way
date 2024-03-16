@@ -134,7 +134,6 @@
 ### xUnitTest Tools <a name="tests"></a>
 1. [`Assert.Same()`][tests-1]
 2. [`Assert.Equal()`][tests-2]
-10. [Tests class template][tests-10]
 101. [`MockBehavior.Loose` vs `MockBehavior.Strict`][tests-101]
 102. [`AutoMock`][tests-102]
 201. [`IAsyncLifetime`][tests-201]
@@ -143,10 +142,10 @@
 301. [`It.IsAny()`][tests-301]
 302. [`It.IsNotNull()`][tests-302]
 303. [`It.Is()`][tests-303]
+10001. [Tests class template][tests-10001]
 
 [tests-1]:.Net/Research/XUnitTools/Asserts/SameUnitTests.cs
 [tests-2]:.Net/Research/XUnitTools/Asserts/EqualUnitTests.cs
-[tests-10]:.Net/Research/XUnitTools/UnitTestsTemplate.cs
 [tests-101]:.Net/Research/XUnitTools/LooseVsStrictUnitTests.cs
 [tests-102]:.Net/Research/XUnitTools/AutoMockUnitTests.cs
 [tests-201]:.Net/Research/XUnitTools/ActivityTypes/AsyncLifetimeFixture.cs
@@ -155,6 +154,7 @@
 [tests-301]:.Net/Research/XUnitTools/ItMethods/IsAnyUnitTests.cs
 [tests-302]:.Net/Research/XUnitTools/ItMethods/IsNotNullUnitTests.cs
 [tests-303]:.Net/Research/XUnitTools/ItMethods/IsUnitTests.cs
+[tests-10001]:.Net/Research/XUnitTools/UnitTestsTemplate.cs
 
 ### WinForms <a name="win-forms"></a>
 1. [Host][win-forms-1]
